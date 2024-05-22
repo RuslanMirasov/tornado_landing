@@ -48,13 +48,13 @@
     right: 0px;
     bottom: 0px;
     background: url('../img/noise.gif');
-    background-size: 300px 300px;
+    background-size: 540px 540px;
     opacity: 0.1;
     z-index: 2;
   }
 }
 
-.noice {
+.noise {
   &:before {
     content: '';
     display: block;
@@ -64,7 +64,7 @@
     right: 0px;
     bottom: 0px;
     background: url('../img/noise.gif');
-    background-size: 300px 300px;
+    background-size: 540px 540px;
     opacity: 0.1;
     z-index: 0;
   }

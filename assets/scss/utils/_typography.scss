@@ -6,6 +6,7 @@ h5,
 h6 {
   display: block;
   font-family: 'Cartoon';
+  font-weight: normal;
 }
 
 .titleWrapper {
@@ -28,6 +29,9 @@ h6 {
     .skills {
       font-size: 167.48px;
     }
+  }
+  &.title--h3 {
+    font-size: 32.41px;
   }
 }
 

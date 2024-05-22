@@ -1,0 +1,58 @@
+//Section Promo
+
+.section--promo {
+  height: auto;
+}
+
+.truck {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+  }
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+  }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    transform: translate(10.34%, 5.55%);
+    width: 48.6%;
+    height: 100%;
+    background: url(../img/truck.gif) no-repeat left center;
+    background-size: 100% auto;
+  }
+}
+
+.truckWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: rgb(54, 54, 54);
+  width: 50%;
+  position: relative;
+  margin: 50px auto;
+  overflow: hidden;
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 45%;
+  }
+  .truck {
+    transform: translate(0%, -5%);
+  }
+}

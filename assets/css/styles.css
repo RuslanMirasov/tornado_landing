@@ -12,13 +12,6 @@
   font-style: normal;
   font-display: swap;
 }
-@font-face {
-  font-family: "PF-Din";
-  src: url("../fonts/PFDinTextCondProBold.ttf") format("truetype"), url("../fonts/PFDinTextCondProBold.woff") format("woff"), url("../fonts/PFDinTextCondProBold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 :root {
   --color: #ffee02;
   --black: #000000;
@@ -100,6 +93,7 @@ h5,
 h6 {
   display: block;
   font-family: "Cartoon";
+  font-weight: normal;
 }
 
 .titleWrapper {
@@ -123,6 +117,9 @@ h6 {
 }
 .title.title--h1 .skills {
   font-size: 167.48px;
+}
+.title.title--h3 {
+  font-size: 32.41px;
 }
 
 .upper {
@@ -165,6 +162,9 @@ h6 {
   align-items: center;
   gap: 28px;
   padding-right: 0px;
+}
+.header .button {
+  height: 40px;
 }
 
 .logo {
@@ -215,6 +215,9 @@ h6 {
   align-content: center;
   gap: 12px;
 }
+.buttonWrapper.ta--c {
+  justify-content: center;
+}
 
 .button {
   display: inline-flex;
@@ -229,12 +232,11 @@ h6 {
   background: var(--white);
   font-family: "PF-Din";
   font-size: 18px;
-  font-weight: 700;
   padding: 5px 34px;
   line-height: 1;
   text-transform: uppercase;
   transition: 0.3s;
-  height: 40px;
+  height: 53px;
   z-index: 1;
 }
 .button span {
@@ -247,13 +249,13 @@ h6 {
   position: absolute;
   left: 0px;
   bottom: 0px;
-  background: var(--white);
+  background: var(--color);
   border-radius: 1000px;
-  width: 550px;
-  height: 550px;
+  width: 140%;
+  padding-top: 100%;
   transform-origin: center;
   transform: translate(-50%, 50%) scale(0);
-  transition: 0.8s;
+  transition: 0.6s;
   z-index: 0;
 }
 .button:hover:before {
@@ -261,6 +263,9 @@ h6 {
 }
 .button.button--yellow {
   background: var(--color);
+}
+.button.button--yellow:before {
+  background: var(--white);
 }
 .button.arrow {
   padding-right: 24px;
@@ -339,12 +344,12 @@ h6 {
   right: 0px;
   bottom: 0px;
   background: url("../img/noise.gif");
-  background-size: 300px 300px;
+  background-size: 540px 540px;
   opacity: 0.1;
   z-index: 2;
 }
 
-.noice:before {
+.noise:before {
   content: "";
   display: block;
   position: absolute;
@@ -353,7 +358,7 @@ h6 {
   right: 0px;
   bottom: 0px;
   background: url("../img/noise.gif");
-  background-size: 300px 300px;
+  background-size: 540px 540px;
   opacity: 0.1;
   z-index: 0;
 }
@@ -453,6 +458,140 @@ h6 {
 }
 
 .section--steps {
-  padding: 120px 0px;
-  height: 100vh;
+  padding: 80px 0px;
+}
+.section--steps .buttonWrapper {
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+.section--steps .title {
+  color: var(--color);
+}
+.section--steps .subtitle {
+  font-size: 24px;
+  max-width: 200px;
+  z-index: 2;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px 136px;
+}
+.steps li {
+  counter-increment: item;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  width: calc((100% - 408px) / 4);
+  justify-content: center;
+  text-align: center;
+}
+.steps li .effect {
+  position: absolute;
+  width: 160%;
+  max-width: 160%;
+  transform: translate(0%, -15%);
+  z-index: 0;
+}
+.steps li:before {
+  content: counter(item);
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 0;
+  transform: translate(-10%, -10%);
+  font-size: 200px;
+  line-height: 200px;
+  color: var(--color);
+  opacity: 0.2;
+  z-index: 1;
+}
+.steps li > * {
+  width: 100%;
+}
+
+.step-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.step-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.step-image:before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.section--promo {
+  height: auto;
+}
+
+.truck {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+.truck img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+.truck:after {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 100%;
+}
+.truck:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  transform: translate(10.34%, 5.55%);
+  width: 48.6%;
+  height: 100%;
+  background: url(../img/truck.gif) no-repeat left center;
+  background-size: 100% auto;
+}
+
+.truckWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: rgb(54, 54, 54);
+  width: 50%;
+  position: relative;
+  margin: 50px auto;
+  overflow: hidden;
+}
+.truckWrapper:after {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 45%;
+}
+.truckWrapper .truck {
+  transform: translate(0%, -5%);
 }
