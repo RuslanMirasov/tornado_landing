@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Cartoon';
+  src: url('../fonts/cartoon.ttf') format('truetype'), url('../fonts/cartoon.woff') format('woff'),
+    url('../fonts/cartoon.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PF-Din';
+  src: url('../fonts/PFDinTextCondProRegular.ttf') format('truetype'),
+    url('../fonts/PFDinTextCondProRegular.woff') format('woff'),
+    url('../fonts/PFDinTextCondProRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PF-Din';
+  src: url('../fonts/PFDinTextCondProBold.ttf') format('truetype'),
+    url('../fonts/PFDinTextCondProBold.woff') format('woff'),
+    url('../fonts/PFDinTextCondProBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

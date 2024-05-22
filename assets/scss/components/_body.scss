@@ -1,0 +1,13 @@
+.body {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: 'PF-Din';
+  font-weight: normal;
+}
+
+.main {
+  display: block;
+  position: relative;
+}

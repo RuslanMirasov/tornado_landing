@@ -1,30 +1,15 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+@import './utils/fonts';
+@import './utils/thema';
+@import './utils/reset';
+@import './utils/typography';
 
-body {
-  background: #000000;
-  color: #fff;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
+//Components
+@import './components/body';
+@import './components/header';
+@import './components/buttons';
+@import './components/footer';
+@import './components/section';
 
-header {
-  display: block;
-  position: fixed;
-  width: 100%;
-  height: 70px;
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(10px);
-
-  top: 0px;
-  left: 0px;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  object-fit: cover;
-}
+//Sections
+@import './sections/hero';
+@import './sections/steps';

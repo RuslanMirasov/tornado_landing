@@ -1,0 +1,40 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: block;
+  font-family: 'Cartoon';
+}
+
+.titleWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+}
+
+.title {
+  display: block;
+  position: relative;
+  line-height: 1.2;
+  &.title--h1 {
+    font-size: 83.74px;
+    line-height: 1.07;
+    .tornado {
+      font-size: 111.65px;
+    }
+    .skills {
+      font-size: 167.48px;
+    }
+  }
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.ta--c {
+  text-align: center;
+}

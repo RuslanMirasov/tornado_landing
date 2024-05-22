@@ -19,25 +19,103 @@
     <link rel="stylesheet" href="./assets/css/styles.min.css" />
     <title>Tornado Energy</title>
   </head>
-  <body>
+  <body class="body">
     <!-- Header -->
     <header class="header">
-      <div class="container">header</div>
+      <div class="container">
+        <!--Logo-->
+        <div class="logo">
+          <a href="#">
+            <img
+              height="50"
+              srcset="./assets/img/logo.png 1x, ./assets/img/logo@2x.png 2x"
+              src="./assets/img/logo.png"
+              alt="Tornado Energy"
+              class="bg"
+            />
+          </a>
+          <svg width="14" height="14"><use href="./assets/img/icons.svg#close"></use></svg>
+          <a href="#">
+            <img
+              height="50"
+              srcset="./assets/img/pugb.png 1x, ./assets/img/pugb@2x.png 2x"
+              src="./assets/img/pugb.png"
+              alt="Tornado Energy"
+              class="bg"
+            />
+          </a>
+        </div>
+        <!--Navigation-->
+        <nav class="navigation">
+          <menu class="menu">
+            <li><a href="#" data-scrollto="section--steps">Главная</a></li>
+            <li><a href="#" data-scrollto="section--steps">Продукция</a></li>
+            <li><a href="#" data-scrollto="section--steps">Где купить</a></li>
+            <li><a href="#" data-scrollto="section--steps">Частые вопросы</a></li>
+            <li><a href="#" data-scrollto="section--steps">Правила</a></li>
+          </menu>
+        </nav>
+        <!--Header buttons-->
+        <div class="buttonWrapper">
+          <button class="button button--yellow"><span>Зарегистрировать чек</span></button>
+          <button class="button arrow"><span>Войти</span></button>
+          <a href="#" class="header-btn">Основная промоакция</a>
+        </div>
+      </div>
     </header>
     <main class="main">
       <!-- Section Hero -->
-      <section class="section">
+      <section class="section section--hero">
         <div class="section-background">
-          <img src="./assets/img/hero/bg@2x.jpg" alt="Tornado Energy" />
+          <img
+            srcset="./assets/img/hero/bg.jpg 1x, ./assets/img/hero/bg@2x.jpg 2x"
+            src="./assets/img/hero/bg.jpg"
+            alt="Tornado Energy"
+            class="bg"
+          />
+          <div class="tornado">
+            <img
+              srcset="./assets/img/hero/can.png 1x, ./assets/img/hero/can@2x.png 2x"
+              src="./assets/img/hero/can.png"
+              alt="Tornado Energy"
+              class="can"
+            />
+            <img src="./assets/img/hero/hero.gif" alt="Tornado Energy" class="animation" />
+          </div>
+          <img
+            srcset="./assets/img/hero/man.png 1x, ./assets/img/hero/man@2x.png 2x"
+            src="./assets/img/hero/man.png"
+            alt="Tornado Energy"
+            class="man"
+          />
         </div>
         <div class="container">
-          <h1>hero</h1>
+          <div class="titleWrapper">
+            <h1 class="title title--h1">
+              Активируй <span class="tornado">tornado</span> <span class="skills">skill!</span>
+            </h1>
+            <p class="hero-subtitle">Получи 60 UC за покупку TORNADO SKILL</p>
+          </div>
+          <a href="#" data-scrollto="section--steps" class="scrolldown">
+            <img src="./assets/img/hero/arrows.gif" alt="Tornado Energy" class="man" />
+          </a>
+        </div>
+      </section>
+
+      <!-- Section Steps -->
+      <section class="section section--steps noice">
+        <div class="container">
+          <h2>steps</h2>
+          <button class="button button--yellow arrow">
+            <span>Авторизуйся, чтобы увидеть свои призы</span>
+          </button>
         </div>
       </section>
     </main>
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
       <div class="container">footer</div>
     </footer>
+    <script src="./assets/js/scripts.js" type="module"></script>
   </body>
 </html>
