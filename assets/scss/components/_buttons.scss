@@ -61,7 +61,7 @@
   &.arrow {
     padding-right: 24px;
     &:after {
-      content: url('/assets/img/svg/arrow.svg');
+      content: url(../img/svg/arrow.svg);
       position: relative;
       transition: 0.3s;
       width: 25px;
