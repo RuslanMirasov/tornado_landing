@@ -1,4 +1,5 @@
 .body {
+  position: relative;
   background: var(--black);
   color: var(--white);
   overflow-x: hidden;
@@ -10,4 +11,5 @@
 .main {
   display: block;
   position: relative;
+  z-index: 1;
 }

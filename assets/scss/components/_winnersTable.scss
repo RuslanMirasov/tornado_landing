@@ -1,0 +1,41 @@
+.winnersTable {
+  width: 100%;
+  margin-top: 48px;
+  text-align: left;
+  font-size: 22px;
+  thead {
+    font-size: 24px;
+    font-family: 'Cartoon';
+    color: var(--color);
+    font-weight: normal;
+    tr {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 20px;
+    }
+  }
+  tbody {
+    tr {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      color: var(--white);
+      transition: 0.3s;
+      &:hover {
+        border-bottom: 1px solid var(--color);
+        color: var(--color);
+      }
+    }
+  }
+  td,
+  th {
+    padding: 15px 0px;
+    min-width: 100px;
+    &:nth-child(2) {
+      min-width: 150px;
+    }
+    &:nth-child(3) {
+      min-width: 150px;
+    }
+  }
+}

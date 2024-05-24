@@ -1,0 +1,29 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  li {
+    position: relative;
+    padding-left: 20px;
+    width: 100%;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 5px;
+      background: var(--white);
+      left: 4px;
+      top: 8px;
+    }
+  }
+}
+
+.link {
+  text-decoration: underline !important;
+  transition: 0.3s;
+  color: var(--white);
+  &:hover {
+    color: var(--color);
+  }
+}

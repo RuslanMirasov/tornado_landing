@@ -14,6 +14,12 @@ h6 {
   flex-wrap: wrap;
   width: 100%;
   gap: 20px;
+  &.ta--c {
+    justify-content: center;
+  }
+  &.ta--space {
+    justify-content: space-between;
+  }
 }
 
 .title {
@@ -30,9 +36,29 @@ h6 {
       font-size: 167.48px;
     }
   }
+  &.title--h2 {
+    font-size: 48px;
+  }
   &.title--h3 {
     font-size: 32.41px;
   }
+  &.title--h4 {
+    font-size: 40px;
+    line-height: 1;
+  }
+  &.title--h5,
+  &.title--h6 {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  &.title--shops {
+    font-size: 64px;
+    line-height: 1;
+  }
+}
+
+.subtitle {
+  width: 100%;
 }
 
 .upper {
@@ -41,4 +67,9 @@ h6 {
 
 .ta--c {
   text-align: center;
+}
+
+.rub {
+  font-family: 'Arial';
+  font-weight: 700;
 }

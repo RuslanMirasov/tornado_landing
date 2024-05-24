@@ -25,16 +25,6 @@
       <div class="container">
         <!--Logo-->
         <div class="logo">
-          <a href="https://promo.tornadoenergy.me/" target="_blank">
-            <img
-              height="50"
-              srcset="./assets/img/logo.png 1x, ./assets/img/logo@2x.png 2x"
-              src="./assets/img/logo.png"
-              alt="Tornado Energy"
-              class="bg"
-            />
-          </a>
-          <svg width="14" height="14"><use href="./assets/img/icons.svg#close"></use></svg>
           <a href="https://www.pubgmobile.com/en-US/home.shtml" target="_blank">
             <img
               height="50"
@@ -44,22 +34,34 @@
               class="bg"
             />
           </a>
+          <svg width="14" height="14"><use href="./assets/img/icons.svg#close"></use></svg>
+          <a href="https://promo.tornadoenergy.me/" target="_blank">
+            <img
+              height="50"
+              srcset="./assets/img/logo.png 1x, ./assets/img/logo@2x.png 2x"
+              src="./assets/img/logo.png"
+              alt="Tornado Energy"
+              class="bg"
+            />
+          </a>
         </div>
         <!--Navigation-->
         <nav class="navigation">
           <menu class="menu">
             <li><a href="#" data-scrollto="section--hero">Главная</a></li>
-            <li><a href="#" data-scrollto="section--steps">Продукция</a></li>
-            <li><a href="#" data-scrollto="section--steps">Где купить</a></li>
-            <li><a href="#" data-scrollto="section--steps">Частые вопросы</a></li>
-            <li><a href="#" data-scrollto="section--steps">Правила</a></li>
+            <li><a href="#" data-scrollto="section--products">Продукция</a></li>
+            <li><a href="#" data-scrollto="section--shops">Где купить</a></li>
+            <li><a href="#" data-scrollto="section--faq">Частые вопросы</a></li>
+            <li><a href="https://promo.tornadoenergy.me/rules.pdf?v=1" target="_blank">Правила</a></li>
           </menu>
         </nav>
         <!--Header buttons-->
         <div class="buttonWrapper">
-          <button class="button button--yellow"><span>Зарегистрировать чек</span></button>
+          <button class="button button--yellow" data-scrollto="section--steps">
+            <span>Зарегистрировать чек</span>
+          </button>
           <button class="button arrow"><span>Войти</span></button>
-          <a href="#" class="header-btn">Основная промоакция</a>
+          <a href="#" class="header-btn" data-scrollto="section--promo">Основная промоакция</a>
         </div>
       </div>
     </header>
@@ -172,18 +174,703 @@
       <!-- Section promo -->
       <section class="section section--promo noise">
         <div class="container">
-          <div class="truckWrapper">
-            <div class="truck">
-              <img src="./assets/img/promo/truck.png" alt="Tornado Energy" />
+          <div class="promo">
+            <!--Background-->
+            <svg class="promoBg"><use href="./assets/img/icons.svg#promoBg"></use></svg>
+
+            <!--Images-->
+            <img
+              srcset="./assets/img/promo/1.png 1x, ./assets/img/promo/1@2x.png 2x"
+              src="./assets/img/promo/1.png"
+              alt="Tornado Energy"
+              class="promo-image left top"
+            />
+            <img
+              srcset="./assets/img/promo/2.png 1x, ./assets/img/promo/2@2x.png 2x"
+              src="./assets/img/promo/2.png"
+              alt="Tornado Energy"
+              class="promo-image left middle"
+            />
+            <img
+              srcset="./assets/img/promo/3.png 1x, ./assets/img/promo/3@2x.png 2x"
+              src="./assets/img/promo/3.png"
+              alt="Tornado Energy"
+              class="promo-image left bottom"
+            />
+            <img
+              srcset="./assets/img/promo/4.png 1x, ./assets/img/promo/4@2x.png 2x"
+              src="./assets/img/promo/4.png"
+              alt="Tornado Energy"
+              class="promo-image right top"
+            />
+            <img
+              srcset="./assets/img/promo/5.png 1x, ./assets/img/promo/5@2x.png 2x"
+              src="./assets/img/promo/5.png"
+              alt="Tornado Energy"
+              class="promo-image right bottom"
+            />
+            <div class="truckWrapper">
+              <div class="truck">
+                <img src="./assets/img/promo/truck.png" alt="Tornado Energy" />
+              </div>
+            </div>
+
+            <!--Text-->
+            <h2 class="promo-title">
+              <p>ВЫИГРАЙ</p>
+              <p><span class="accent">КИБЕРТРАК</span> <span class="or">или</span></p>
+              <p class="accent">15 000 000 <span class="rub">&#8381;</span></p>
+              <p>и другие призы на основной промоакции</p>
+            </h2>
+
+            <!--Button-->
+            <div class="buttonWrapper">
+              <a href="#" class="button slope"><span>Перейти</span></a>
             </div>
           </div>
         </div>
       </section>
+
+      <!--Section--products-->
+      <section class="section section--products noise">
+        <div class="titleWrapper ta--c">
+          <h2 class="title title--h2">Продукция участвующая в акции</h2>
+        </div>
+        <div class="products">
+          <div class="section-background">
+            <img src="./assets/img/products/products.gif" alt="Tornado Energy" class="animation" />
+            <div class="products-bg-text">
+              <div class="runText" data-runtext="left">
+                <div class="runText__inner">wild&nbsp;mix&nbsp;</div>
+              </div>
+              <div class="runText" data-runtext="right">
+                <div class="runText__inner">0.45&nbsp;/&nbsp;0.47&nbsp;/&nbsp;</div>
+              </div>
+              <div class="runText" data-runtext="left">
+                <div class="runText__inner">tornado&nbsp;SKILL&nbsp;</div>
+              </div>
+            </div>
+            <img src="./assets/img/products/crack.png" alt="Tornado Energy" class="crack" />
+          </div>
+          <div class="container">
+            <div class="products-images">
+              <img
+                srcset="./assets/img/products/product1.png 1x, ./assets/img/products/product1@2x.png 2x"
+                src="./assets/img/products/product1.png"
+                alt="Tornado Energy"
+              />
+              <img
+                srcset="./assets/img/products/product2.png 1x, ./assets/img/products/product2@2x.png 2x"
+                src="./assets/img/products/product2.png"
+                alt="Tornado Energy"
+              />
+            </div>
+            <div class="titleWrapper">
+              <h3 class="title title--h4">
+                Tornado Energy SKILL <span class="cool-gradient">>>>>>>>>>></span>
+              </h3>
+              <p class="subtitle">
+                Купи Торнадо Skill в любом магазине, зарегистририруй чек на сайте, получи 60UC в игре PUBG
+                Mobile!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Section--shops-->
+      <section class="section section--shops noise">
+        <div class="container">
+          <div class="titleWrapper ta--c">
+            <h2 class="title title--shops">Где купить TORNADO SKILL?</h2>
+            <p class="subtitle">— во всех магазинах страны, а также —</p>
+          </div>
+          <ul class="shops">
+            <li>
+              <a
+                href="https://market.yandex.ru/showcaptcha?mt=6AA0EA5CFDFAED7962CEB8A0184AA64285299F052F623D817FD4186D1677B5ED89D57EAC6D6A16EA63C2FD27BBFDECE1DC443810318F2C12B368E7467C7398279CFFF3D5F24E8D76AF791B68DFEE2A969F8CC956097AE4704F5775FB514F386EEA3670544775B22500FFAF12396123BF0D8D7B830D5366C831F4785788E136990D0669485B15E4670FC6AB165CCE4188F8E453B146308212036E5FE3DAC4527FD77F86EFCDF76EC1893F621A8138D8D2BFB7D233C327C706ECF1B0E35A8623FDC83D8C4900678039329EC26495F3DF55D69D0327F93880F4575BCC7BDE1FB30BE71632B170A2C4C534924ED7FA9BE1150D7810FCA0A1&retpath=aHR0cHM6Ly9tYXJrZXQueWFuZGV4LnJ1L2NhdGFsb2ctLWVuZXJnZXRpY2hlc2tpZS1uYXBpdGtpLzcyMjg2L2xpc3Q_cGFyc2VkLWdsZmlsdGVyPTc4OTMzMTglM0ExMDc5Mjg5NiZ0ZXh0PXRvcm5hZG8lMjBlbmVyZ3kmaGlkPTE1NzI2NDA4JnJzPWVKd2xVRHRJdzFBVWZhOGZqQlVsbzFxRVo2Y2lpTFpDYmJWQzZDUzRWSGRKWTR3MlVwS1ExRUVkRENnaUNrNU91c1JaaFRvNC1LTlJzS2hyY1JBSDR3ODNkVkRFemR6cmNqZzU5OXh6Ymw3eUxoZ1RJaTFsM2RTa1NaMHBtbUpPel9HMXA4ZGdMTVFSdmdXUl9HT2N6cEI1THRIYm4wbW1NeW1iWHIxWEc5Wm9nS041T2hfbTRLdEN5U1VsYkdySVIzZHMwRWZoTlF2SzB3bGdmY0JIYndPVlQ1aDYtNkFMaThEWk9laGtGZENPbm9LU3g2MDNVQW9WNFBZeGNLOExwNXVvM0FLM1J3RGRVZWhsblppX0RGTzNCbHc0UkRReVBqcV95QThBblMtOFlhRUtfQVdtTElINk9DYnNZdkl3WkJaLThMWkc0TUlTb0pPRnFVT0JreDY4Y3gzU0NpdmdkTF94empybTREODYyOWlMTDJEdm9YNkhubnZZY3A5eGk2SGVjUWFlSFBvRDJOaUU3VHZvYjhQM2VZQjJ6OFl0QVZfakExcTgwdUFONWZxVVJEb2xwNVhjWktRN3duR1VEN2RTUnZsQWUxUTJKTkVxNm9hb2F2SnNXVFJWdVNoYW1tb1lTcG1ST0lrazBNNjFOck1RejdkSEp5UkxsVVZaTXZWWlN5bUpSa2xTTmRGU0pGTXVzb3NqS1g2OWxlVHBIMkV2dkcwJTJDJmNvbm5lY3RlZC1yZXRhaWw9Z29vZHNDZW50cmljU2VhcmNoJmdsZmlsdGVyPTc4OTMzMTglM0ExMDc5Mjg5Ng%2C%2C_c5c067b66c75cec29bd0c1b663a53ea7&t=2/1716495500/3c34b61eb271cfac4cd2acf02f1e9147&u=d196d51-d25926f0-eb1317cc-d646e52c&s=f7f581543004a6fa191231b50b52860a"
+                class="schop-link yamarket"
+              >
+                <span>Я</span>маркет
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.ozon.ru/category/energeticheskie-napitki-9473/?category_was_predicted=true&deny_category_prediction=true&from_global=true&text=tornado+energy"
+                target="_blank"
+                class="schop-link ozone"
+              >
+                OZON
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://samokat.ru/product/ca00c99a-964a-11ec-b0fc-08c0eb31fffb"
+                target="_blank"
+                class="schop-link samokat"
+                >Самокат</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://krasnoeibeloe.ru/catalog/energetiki_kokteyli/energeticheskie_napitki/"
+                target="_blank"
+                class="schop-link red_white"
+                >Красное белое</a
+              >
+            </li>
+            <li>
+              <a href="https://dostavka.5ka.ru/" target="_blank" class="schop-link peterochka">Пятёрочка</a>
+            </li>
+            <li>
+              <a
+                href="https://magnit.ru/search/?term=tornado+energy"
+                target="_blank"
+                class="schop-link magnit"
+                >Магнит</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--Section--winners-->
+      <section class="section section--winners">
+        <div class="section-background">
+          <img src="./assets/img/winners/winners.gif" alt="Tornado Energy" class="animation" />
+          <img src="./assets/img/svg/winnersBg.svg" alt="Tornado Energy" class="svg" />
+          <img
+            srcset="./assets/img/winners/wwcd.png 1x, ./assets/img/winners/wwcd@2x.png 2x"
+            src="./assets/img/winners/wwcd.png"
+            alt="Tornado Energy"
+            class="bg"
+          />
+        </div>
+        <div class="container">
+          <div class="titleWrapper ta--space">
+            <h2 class="title title--h2">Победители</h2>
+            <button class="button button--yellow arrow">
+              <span>Авторизуйся, чтобы увидеть свои призы</span>
+            </button>
+          </div>
+          <!--Winners-->
+          <table class="winnersTable">
+            <thead>
+              <tr>
+                <th>Дата</th>
+                <th>Имя</th>
+                <th>Контакт</th>
+                <th>Приз</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>дд.мм.гггг</td>
+                <td>Пантелеймон Р.</td>
+                <td>+78974587896</td>
+                <td>60 UC</td>
+              </tr>
+              <tr>
+                <td>дд.мм.гггг</td>
+                <td>Пантелеймон Р.</td>
+                <td>+78974587896</td>
+                <td>60 UC</td>
+              </tr>
+              <tr>
+                <td>дд.мм.гггг</td>
+                <td>Пантелеймон Р.</td>
+                <td>+78974587896</td>
+                <td>60 UC</td>
+              </tr>
+              <tr>
+                <td>дд.мм.гггг</td>
+                <td>Пантелеймон Р.</td>
+                <td>+78974587896</td>
+                <td>60 UC</td>
+              </tr>
+              <tr>
+                <td>дд.мм.гггг</td>
+                <td>Пантелеймон Р.</td>
+                <td>+78974587896</td>
+                <td>60 UC</td>
+              </tr>
+              <tr>
+                <td>дд.мм.гггг</td>
+                <td>Пантелеймон Р.</td>
+                <td>+78974587896</td>
+                <td>60 UC</td>
+              </tr>
+              <tr>
+                <td>дд.мм.гггг</td>
+                <td>Пантелеймон Р.</td>
+                <td>+78974587896</td>
+                <td>60 UC</td>
+              </tr>
+              <tr>
+                <td>дд.мм.гггг</td>
+                <td>Пантелеймон Р.</td>
+                <td>+78974587896</td>
+                <td>60 UC</td>
+              </tr>
+              <tr>
+                <td>дд.мм.гггг</td>
+                <td>Пантелеймон Р.</td>
+                <td>+78974587896</td>
+                <td>60 UC</td>
+              </tr>
+              <tr>
+                <td>дд.мм.гггг</td>
+                <td>Пантелеймон Р.</td>
+                <td>+78974587896</td>
+                <td>60 UC</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!--winners pagination-->
+          <div class="pagination">
+            <a href="#" class="pagination-btn left">
+              <svg width="14" height="14"><use href="./assets/img/icons.svg#arr-left"></use></svg>
+            </a>
+            <a href="#" class="pagination-btn active">1</a>
+            <a href="#" class="pagination-btn">2</a>
+            <a href="#" class="pagination-btn">3</a>
+            <a href="#" class="pagination-btn">4</a>
+            <a href="#" class="pagination-btn right">
+              <svg width="14" height="14"><use href="./assets/img/icons.svg#arr-right"></use></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--Section--FAQ-->
+      <section class="section section--faq noise">
+        <div class="container">
+          <div class="titleWrapper ta--c">
+            <h2 class="title title--h2">Часто задаваемые вопросы</h2>
+          </div>
+          <div class="faq-wrapper">
+            <div class="faq">
+              <!--question 1-->
+              <div class="accordeon" data-accordeon>
+                <div class="accordeon__head">
+                  <p>Как принять участие в акции?</p>
+                  <button type="button" class="accordeon__btn">
+                    <svg width="14" height="14"><use href="./assets/img/icons.svg#plus"></use></svg>
+                  </button>
+                </div>
+                <div class="accordeon__body">
+                  <div class="accordeon__answer">
+                    <p>Чтобы принять участие в акции, необходимо:</p>
+                    <ul class="list">
+                      <li>
+                        Совершить покупку Продукции под товарным знаком «Tornado Energy» в любом магазине (в
+                        том числе онлайн-магазины), расположенном на территории Российской Федерации.
+                      </li>
+                      <li>Зарегистрироваться на сайте акции promo.tornadoenergy.me</li>
+                      <li>
+                        Чек покупки необходимо загрузить в личный кабинет на сайте акции. <br />
+                        Загружаемая фотография кассового чека должна быть четкой, легко читаемой, со
+                        считываемым QR-кодом или штрих-кодом, датой и временем совершения покупки, и иной
+                        содержащейся на кассовом чеке информацией.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--question 2-->
+              <div class="accordeon" data-accordeon>
+                <div class="accordeon__head">
+                  <p>Кто может принять участие в акции?</p>
+                  <button type="button" class="accordeon__btn">
+                    <svg width="14" height="14"><use href="./assets/img/icons.svg#plus"></use></svg>
+                  </button>
+                </div>
+                <div class="accordeon__body">
+                  <div class="accordeon__answer">
+                    <p>
+                      Участниками акции могут являться дееспособные лица, достигшие возраста 18 лет, граждане
+                      Российской Федерации, проживающие на территории РФ. Участниками акции не могут быть
+                      сотрудники и представители организатора, аффилированные с организатором лица, члены их
+                      семей, а также работники других юридических лиц, причастных к организации и проведению
+                      акции, и члены их семей.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--question 3-->
+              <div class="accordeon" data-accordeon>
+                <div class="accordeon__head">
+                  <p>Сроки проведения акции</p>
+                  <button type="button" class="accordeon__btn">
+                    <svg width="14" height="14"><use href="./assets/img/icons.svg#plus"></use></svg>
+                  </button>
+                </div>
+                <div class="accordeon__body">
+                  <div class="accordeon__answer">
+                    <p>
+                      Период совершения покупки и регистрации чеков с 01 мая 2024 г. по 31 августа 2024 г.
+                      (включительно). Период выдачи призов: с 01 мая 2024 г. по 30 сентября 2024 года
+                      (включительно).
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--question 4-->
+              <div class="accordeon" data-accordeon>
+                <div class="accordeon__head">
+                  <p>Где проводится акция?</p>
+                  <button type="button" class="accordeon__btn">
+                    <svg width="14" height="14"><use href="./assets/img/icons.svg#plus"></use></svg>
+                  </button>
+                </div>
+                <div class="accordeon__body">
+                  <div class="accordeon__answer">
+                    <p>
+                      Во всех торговых точках на территории Российской Федерации, в том числе осуществляющих
+                      продажу через интернет.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--question 5-->
+              <div class="accordeon" data-accordeon>
+                <div class="accordeon__head">
+                  <p>Какая продукция участвует в акции?</p>
+                  <button type="button" class="accordeon__btn">
+                    <svg width="14" height="14"><use href="./assets/img/icons.svg#plus"></use></svg>
+                  </button>
+                </div>
+                <div class="accordeon__body">
+                  <div class="accordeon__answer">
+                    <p>В акции участвует вся Продукция под товарным знаком «Tornado Energy», а именно:</p>
+                    <ul class="list">
+                      <li>
+                        Напиток безалкогольный тонизирующий газированный «Торнадо Энерджи АЙСБЕРРИ (Tornado
+                        Energy ICEBERRY)»
+                      </li>
+                      <li>
+                        Напиток безалкогольный тонизирующий газированный «Торнадо Энерджи БАББЛ (Tornado
+                        Energy BUBBLE)»
+                      </li>
+                      <li>
+                        Напиток безалкогольный тонизирующий газированный со вкусом арбуза «Торнадо Энерджи
+                        ВАТЕРМЕЛОН (Tornado Energy WATERMELON)»
+                      </li>
+                      <li>
+                        Напиток безалкогольный тонизирующий газированный «Торнадо Энерджи КОКОНАТ (Tornado
+                        Energy COCONUT)»
+                      </li>
+                      <li>
+                        Напиток безалкогольный тонизирующий газированный со вкусом малины «Торнадо Энерджи
+                        РАЗЗБЕРРИ (Tornado Energy RAZZBERRY)»
+                      </li>
+                      <li>
+                        Напиток безалкогольный тонизирующий газированный «Торнадо Энерджи СКИЛЛ (Tornado
+                        Energy SKILL)»
+                      </li>
+                      <li>
+                        Напиток безалкогольный тонизирующий газированный «Торнадо Энерджи АКТИВ (Tornado
+                        Energy ACTIVE)»
+                      </li>
+                      <li>
+                        Напиток безалкогольный тонизирующий газированный со вкусом банана «Торнадо Энерджи
+                        БАНАНА (Tornado Energy BANANA)»
+                      </li>
+                      <li>
+                        Напиток безалкогольный тонизирующий газированный «Торнадо Энерджи ШТОРМ (Tornado
+                        Energy STORM)»
+                      </li>
+                      <li>
+                        Напиток безалкогольный тонизирующий газированный со вкусом кактуса «Торнадо Энерджи
+                        КАКТУС (Tornado Energy CACTUS)»
+                      </li>
+                      <li>
+                        Напиток безалкогольный тонизирующий газированный «Торнадо Энерджи ЛЕМОНКЕЙК (Tornado
+                        Energy LEMONCAKE)»
+                      </li>
+                      <li>
+                        Напиток безалкогольный тонизирующий газированный со вкусом манго «Торнадо Энерджи
+                        МАНГО (Tornado Energy MANGO)»
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--question 6-->
+              <div class="accordeon" data-accordeon>
+                <div class="accordeon__head">
+                  <p>Сохранять ли чеки?</p>
+                  <button type="button" class="accordeon__btn">
+                    <svg width="14" height="14"><use href="./assets/img/icons.svg#plus"></use></svg>
+                  </button>
+                </div>
+                <div class="accordeon__body">
+                  <div class="accordeon__answer">
+                    <p>Чеки необходимо сохранять до окончания акции.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!--question 7-->
+              <div class="accordeon" data-accordeon>
+                <div class="accordeon__head">
+                  <p>Нужно ли регистрировать чеки?</p>
+                  <button type="button" class="accordeon__btn">
+                    <svg width="14" height="14"><use href="./assets/img/icons.svg#plus"></use></svg>
+                  </button>
+                </div>
+                <div class="accordeon__body">
+                  <div class="accordeon__answer">
+                    <p>
+                      Чек покупки необходимо загрузить в личный кабинет на сайте
+                      <a href="https://promo.tornadoenergy.me/" target="_blank" class="link">
+                        promo.tornadoenergy.me
+                      </a>
+                      . Загружаемая фотография кассового чека должна быть четкой, легко читаемой, со
+                      считываемым QR-кодом или штрих-кодом, датой и временем совершения покупки и иной
+                      содержащейся на кассовом чеке информацией.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--question 8-->
+              <div class="accordeon" data-accordeon>
+                <div class="accordeon__head">
+                  <p>
+                    Сколько раз я могу покупать продукцию "tornado energy" и участвовать в акции в течении
+                    акции?
+                  </p>
+                  <button type="button" class="accordeon__btn">
+                    <svg width="14" height="14"><use href="./assets/img/icons.svg#plus"></use></svg>
+                  </button>
+                </div>
+                <div class="accordeon__body">
+                  <div class="accordeon__answer">
+                    <p>
+                      Один пользователь может загрузить не более 10 чеков каждый день в период проведения
+                      акции.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--question 9-->
+              <div class="accordeon" data-accordeon>
+                <div class="accordeon__head">
+                  <p>Как проводится розыгрыш мгновенных призов?</p>
+                  <button type="button" class="accordeon__btn">
+                    <svg width="14" height="14"><use href="./assets/img/icons.svg#plus"></use></svg>
+                  </button>
+                </div>
+                <div class="accordeon__body">
+                  <div class="accordeon__answer">
+                    <p>
+                      Каждую неделю Пользователь, набравший 3 Коина (Заявки на розыгрыш), получает возможность
+                      открыть в личном кабинете Кейс и узнать какой Приз он выиграл.
+                    </p>
+                    <p>
+                      Кейс становится доступным пользователю каждый понедельник. За весь период акции
+                      максимально можно открыть 10 Кейсов.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--question 10-->
+              <div class="accordeon" data-accordeon>
+                <div class="accordeon__head">
+                  <p>Как проводится розыгрыш ежемесячных призов?</p>
+                  <button type="button" class="accordeon__btn">
+                    <svg width="14" height="14"><use href="./assets/img/icons.svg#plus"></use></svg>
+                  </button>
+                </div>
+                <div class="accordeon__body">
+                  <div class="accordeon__answer">
+                    <p>Розыгрыш ежемесячных призов происходит в соответствии с датами ниже:</p>
+                    <ul class="list">
+                      <li>За 1-й месяц - 07.06.2024 г.;</li>
+                      <li>За 2-й месяц - 05.07.2024 г.;</li>
+                      <li>За 3-й месяц - 09.08.2024 г.;</li>
+                      <li>За 4-й месяц - 06.09.2024 г.;</li>
+                    </ul>
+                    <p>
+                      В розыгрыше принимают участие все Заявки на розыгрыш (Коины) полученные за период
+                      регистрации. Для участия в розыгрыше необходимо зарегистрировать минимум 3 единицы
+                      продукции и иметь 10 Коинов ( Заявок на розыгрыш)
+                    </p>
+                    <p>
+                      Розыгрыш призов проводится в соответствии с формулами, указанными в правилах акции, в
+                      разделе 8.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--question 11-->
+              <div class="accordeon" data-accordeon>
+                <div class="accordeon__head">
+                  <p>Как проводится розыгрыш главного приза?</p>
+                  <button type="button" class="accordeon__btn">
+                    <svg width="14" height="14"><use href="./assets/img/icons.svg#plus"></use></svg>
+                  </button>
+                </div>
+                <div class="accordeon__body">
+                  <div class="accordeon__answer">
+                    <p>Розыгрыш главного приза акции будет произведен 06.09.2024 г.</p>
+                    <p>
+                      В розыгрыше принимают участие все Заявки на розыгрыш (Коины) полученные за период
+                      регистрации. Для участия в розыгрыше необходимо зарегистрировать минимум 10 единиц
+                      продукции и иметь 30 Коинов ( Заявок на розыгрыш).
+                    </p>
+                    <p>
+                      Розыгрыш призов проводится в соответствии с формулами, указанными в правилах акции, в
+                      разделе 8.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--question 12-->
+              <div class="accordeon" data-accordeon>
+                <div class="accordeon__head">
+                  <p>Как я узнаю, что стал победителем?</p>
+                  <button type="button" class="accordeon__btn">
+                    <svg width="14" height="14"><use href="./assets/img/icons.svg#plus"></use></svg>
+                  </button>
+                </div>
+                <div class="accordeon__body">
+                  <div class="accordeon__answer">
+                    <p>
+                      Организаторы акции свяжутся с вами по электронной почте, указанной в личном кабинете на
+                      сайте акции. Также результаты всех розыгрышей, будут публиковаться на сайте
+                      <a href="https://promo.tornadoenergy.me/" target="_blank" class="link">
+                        promo.tornadoenergy.me
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--question 13-->
+              <div class="accordeon" data-accordeon>
+                <div class="accordeon__head">
+                  <p>Кто уплачивает налог?</p>
+                  <button type="button" class="accordeon__btn">
+                    <svg width="14" height="14"><use href="./assets/img/icons.svg#plus"></use></svg>
+                  </button>
+                </div>
+                <div class="accordeon__body">
+                  <div class="accordeon__answer">
+                    <p>
+                      Организатор акции выступает налоговым агентом, предоставляет в налоговые органы сведения
+                      о доходах физических лиц в связи с вручением им призов, а также в полном объёме
+                      удерживает денежную часть еженедельного и главного призов и уплачивает налог на доходы
+                      физических лиц из данной дополнительной денежной награды.
+                    </p>
+                    <p>
+                      При выдаче Участнику-Победителю Приза - Автомобиль НДФЛ в размере 35% от стоимости Приза
+                      перечисляются получателем приза (Победителем) в Налоговые органы самостоятельно за счёт
+                      собственных средств. Организатор выполняет функцию по передаче необходимых документов в
+                      Налоговые Органы.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--question 14-->
+              <div class="accordeon" data-accordeon>
+                <div class="accordeon__head">
+                  <p>Что делать, если у меня возникли дополнительные вопросы по проведению акции?</p>
+                  <button type="button" class="accordeon__btn">
+                    <svg width="14" height="14"><use href="./assets/img/icons.svg#plus"></use></svg>
+                  </button>
+                </div>
+                <div class="accordeon__body">
+                  <div class="accordeon__answer">
+                    <p>
+                      Если у вас возникли ещё вопросы, вы можете связаться с организаторами акции по
+                      электронной почте:
+                      <a href="mailto:help@promo.tornadoenergy.me" class="link">
+                        help@promo.tornadoenergy.me
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--FORM-->
+            <div class="contactForm">
+              <h3 class="title title--h5">Отправьте нам сообщение и мы обязательно ответим!</h3>
+              <form action="#" novalidate class="form" data-form>
+                <label class="label">
+                  <input type="text" name="name" class="input" placeholder="Имя" required />
+                </label>
+                <label class="label">
+                  <input type="email" name="email" class="input" placeholder="Email" required />
+                </label>
+                <label class="label">
+                  <select name="thema" class="input" required>
+                    <option value="" selected="">Выберите тему</option>
+                    <option value="Регистрация на сайте">Регистрация на сайте</option>
+                    <option value="Работа сайта">Работа сайта</option>
+                    <option value="Регистрация чеков">Регистрация чеков</option>
+                    <option value="Правила акции">Правила акции</option>
+                    <option value="Продукция">Продукция</option>
+                    <option value="Призы">Призы</option>
+                    <option value="Другое">Другое</option>
+                  </select>
+                </label>
+                <label class="label">
+                  <textarea
+                    name="message"
+                    class="input input--textarea"
+                    placeholder="Текст сообщения"
+                  ></textarea>
+                </label>
+                <button type="submit" class="button button--black arrow"><span>Отправить</span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="container">
+            <p>ООО «Проэкшн» 2024</p>
+            <p>
+              Сроки акции 01.06.2024 - 31.07.2024 Neque porro quisquam est qui dolorem ipsum quia dolor sit
+              amet, consectetur, adipisci velit
+            </p>
+            <ul class="footerNavigation">
+              <li>
+                <a href="https://promo.tornadoenergy.me/rules.pdf?v=1" target="_blank">Правила акции</a>
+              </li>
+              <li><a href="#" target="_blank">Политика конфиденциальности</a></li>
+            </ul>
+            <ul class="socials">
+              <li>
+                <a href="https://vk.com/tornado_energy" target="_blank">
+                  <svg width="14" height="14"><use href="./assets/img/icons.svg#vk"></use></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://t.me/tornadoenergyme" target="_blank">
+                  <svg width="14" height="14"><use href="./assets/img/icons.svg#telegram"></use></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </section>
     </main>
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">footer</div>
-    </footer>
+
     <script src="./assets/js/scripts.js" type="module"></script>
   </body>
 </html>

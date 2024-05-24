@@ -1,0 +1,18 @@
+.socials {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 18px;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--color);
+    svg {
+      width: 60%;
+      height: 60%;
+    }
+  }
+}

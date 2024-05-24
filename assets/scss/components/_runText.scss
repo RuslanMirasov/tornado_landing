@@ -1,0 +1,39 @@
+.runText {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  font-size: 230px;
+  font-weight: 700;
+  line-height: 0.8;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+  color: #1f1f1f;
+}
+
+.runText__inner {
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
+
+[data-runtext='left'].active {
+  .runText__inner:first-child {
+    -webkit-animation: 50s linear infinite moveLeft;
+    animation: 50s linear infinite moveLeft;
+  }
+  .runText__inner:last-child {
+    -webkit-animation: 50s linear infinite moveLeftCopy;
+    animation: 50s linear infinite moveLeftCopy;
+  }
+}
+
+[data-runtext='right'].active {
+  .runText__inner:first-child {
+    -webkit-animation: 50s linear infinite moveRight;
+    animation: 50s linear infinite moveRight;
+  }
+  .runText__inner:last-child {
+    -webkit-animation: 50s linear infinite moveRightCopy;
+    animation: 50s linear infinite moveRightCopy;
+  }
+}

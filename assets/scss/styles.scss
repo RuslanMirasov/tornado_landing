@@ -1,4 +1,6 @@
+//Utils
 @import './utils/fonts';
+@import './utils/animations';
 @import './utils/thema';
 @import './utils/reset';
 @import './utils/typography';
@@ -9,8 +11,20 @@
 @import './components/buttons';
 @import './components/footer';
 @import './components/section';
+@import './components/runText';
+@import './components/schopList';
+@import './components/winnersTable';
+@import './components/pagination';
+@import './components/accordeon';
+@import './components/list';
+@import './components/contactForm';
+@import './components/socials';
 
 //Sections
 @import './sections/hero';
 @import './sections/steps';
 @import './sections/promo';
+@import './sections/products';
+@import './sections/shops';
+@import './sections/winners';
+@import './sections/faq';

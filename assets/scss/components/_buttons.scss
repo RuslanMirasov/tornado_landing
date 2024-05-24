@@ -22,6 +22,7 @@
   background: var(--white);
   font-family: 'PF-Din';
   font-size: 18px;
+  font-weight: 500;
   padding: 5px 34px;
   line-height: 1;
   text-transform: uppercase;
@@ -58,6 +59,19 @@
       background: var(--white);
     }
   }
+  &.button--black {
+    background: var(--black);
+    color: var(--white);
+    &:before {
+      content: none;
+    }
+    &.arrow {
+      &:after {
+        content: url(../img/svg/arrow_white.svg);
+      }
+    }
+  }
+  // button with arrow
   &.arrow {
     padding-right: 24px;
     &:after {
@@ -71,6 +85,37 @@
     &:hover {
       &:after {
         transform: translate(6px, 0px);
+      }
+    }
+  }
+  // button with slope
+  &.slope {
+    transform: skewX(-16deg);
+    span {
+      transform: skewX(16deg);
+      will-change: transform;
+    }
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0px;
+      bottom: 4px;
+      background: var(--color);
+      border-radius: 0px;
+      width: 100%;
+      height: calc(100% - 8px);
+      padding-top: 0;
+      transform-origin: center;
+      transform: translate(-100%, 0%) scale(1);
+      will-change: transform;
+      transition: 0.6s;
+      z-index: 1;
+    }
+
+    &:hover {
+      &:before {
+        transform: translate(0%, 0%) scale(1);
       }
     }
   }

@@ -1,0 +1,64 @@
+.accordeon {
+  width: 100%;
+  position: relative;
+  background: var(--black);
+  &.active {
+    .accordeon__btn {
+      svg {
+        fill: var(--white);
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+.accordeon__head {
+  padding-right: 56px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  p {
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--color);
+    pointer-events: none;
+  }
+}
+
+.accordeon__btn {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: flex;
+  width: 56px;
+  height: 100%;
+  pointer-events: none;
+  svg {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    transition: 0.3s;
+    transform: rotate(0deg);
+    fill: var(--color);
+    pointer-events: none;
+  }
+}
+
+.accordeon__body {
+  position: relative;
+  overflow: hidden;
+  height: 0px;
+  transition: 0.3s;
+}
+
+.accordeon__answer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  padding: 16px 32px 16px 16px;
+}
