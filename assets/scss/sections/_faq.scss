@@ -7,6 +7,9 @@
       color: var(--color);
     }
   }
+  @media screen and (max-width: 1279px) {
+    padding: 100px 0px 210px 0px;
+  }
 }
 
 .faq-wrapper {
@@ -16,6 +19,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+  @media screen and (max-width: 1279px) {
+    justify-content: center;
+    margin-top: 40px;
+    gap: 40px;
+  }
 }
 
 .faq {
@@ -24,4 +32,7 @@
   max-width: 668px;
   flex-wrap: wrap;
   gap: 10px;
+  @media screen and (max-width: 1279px) {
+    max-width: 100%;
+  }
 }

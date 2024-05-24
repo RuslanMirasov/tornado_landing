@@ -4,6 +4,9 @@
     justify-content: center;
     width: 100%;
     margin-top: 10px;
+    @media screen and (max-width: 1279px) {
+      margin-top: 50px;
+    }
   }
   .title {
     color: var(--color);
@@ -32,6 +35,9 @@
     width: calc((100% - 3 * 64px) / 4);
     justify-content: center;
     text-align: center;
+    @media screen and (max-width: 1279px) {
+      width: calc((100% - 64px) / 2);
+    }
     .effect {
       position: absolute;
       width: 160%;
@@ -52,6 +58,9 @@
       color: var(--color);
       opacity: 0.2;
       z-index: 1;
+      @media screen and (max-width: 1279px) {
+        transform: translate(-5%, 0%);
+      }
     }
     > * {
       width: 100%;
@@ -68,6 +77,9 @@
   width: 100%;
   position: relative;
   z-index: 2;
+  @media screen and (max-width: 1279px) {
+    margin-bottom: -20px;
+  }
   img {
     position: absolute;
     width: 100%;

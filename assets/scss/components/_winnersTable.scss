@@ -3,6 +3,9 @@
   margin-top: 48px;
   text-align: left;
   font-size: 22px;
+  @media screen and (max-width: 1279px) {
+    font-size: 14px;
+  }
   thead {
     font-size: 24px;
     font-family: 'Cartoon';
@@ -12,6 +15,12 @@
       display: flex;
       justify-content: space-between;
       padding-bottom: 20px;
+    }
+    @media screen and (max-width: 1279px) {
+      font-size: 18px;
+      tr {
+        padding-bottom: 0px;
+      }
     }
   }
   tbody {

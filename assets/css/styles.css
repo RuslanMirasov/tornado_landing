@@ -256,6 +256,7 @@ h6 {
 }
 .titleWrapper.ta--space {
   justify-content: space-between;
+  align-items: center;
 }
 
 .title {
@@ -287,6 +288,11 @@ h6 {
 .title.title--h2 {
   font-size: 48px;
 }
+@media screen and (max-width: 1279px) {
+  .title.title--h2 {
+    font-size: 36px;
+  }
+}
 .title.title--h3 {
   font-size: 32.41px;
 }
@@ -301,6 +307,11 @@ h6 {
 .title.title--shops {
   font-size: 64px;
   line-height: 1;
+}
+@media screen and (max-width: 1279px) {
+  .title.title--shops {
+    font-size: 46px;
+  }
 }
 
 .subtitle {
@@ -354,12 +365,17 @@ h6 {
   align-items: center;
   gap: 28px;
   padding-left: 36px;
-  max-width: 100%;
+  max-width: 1440px;
 }
 @media screen and (max-width: 1380px) {
   .header .container {
     gap: 20px;
     padding-left: 20px;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .header .container {
+    padding-left: 34px;
   }
 }
 .header .button {
@@ -370,6 +386,11 @@ h6 {
     padding: 0px 20px;
   }
 }
+@media screen and (max-width: 1279px) {
+  .header .buttonWrapper .button:first-child {
+    display: none;
+  }
+}
 
 .logo {
   display: inline-flex;
@@ -377,6 +398,14 @@ h6 {
   align-items: center;
   align-content: center;
   gap: 20px;
+}
+@media screen and (max-width: 1279px) {
+  .logo {
+    gap: 10px;
+  }
+  .logo img {
+    height: 34px;
+  }
 }
 
 .menu {
@@ -393,6 +422,14 @@ h6 {
 }
 .menu a:hover {
   color: var(--color);
+}
+@media screen and (max-width: 1279px) {
+  .menu {
+    gap: 16px;
+  }
+  .menu a {
+    font-size: 14px;
+  }
 }
 
 .header-btn {
@@ -415,6 +452,11 @@ h6 {
   .header-btn {
     width: 100px;
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .header-btn {
+    display: none;
   }
 }
 
@@ -548,7 +590,7 @@ h6 {
   align-content: center;
   font-size: 14px;
   padding: 0px 36px;
-  max-width: 100%;
+  max-width: 1440px;
 }
 
 .footerNavigation {
@@ -703,6 +745,11 @@ h6 {
   text-transform: uppercase;
   position: relative;
 }
+@media screen and (max-width: 1279px) {
+  .schop-link {
+    font-size: 26px;
+  }
+}
 .schop-link:before {
   content: "";
   display: block;
@@ -738,6 +785,11 @@ h6 {
   text-align: left;
   font-size: 22px;
 }
+@media screen and (max-width: 1279px) {
+  .winnersTable {
+    font-size: 14px;
+  }
+}
 .winnersTable thead {
   font-size: 24px;
   font-family: "Cartoon";
@@ -748,6 +800,14 @@ h6 {
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
+}
+@media screen and (max-width: 1279px) {
+  .winnersTable thead {
+    font-size: 18px;
+  }
+  .winnersTable thead tr {
+    padding-bottom: 0px;
+  }
 }
 .winnersTable tbody tr {
   display: flex;
@@ -904,6 +964,19 @@ h6 {
 .contactForm .form {
   margin-top: 40px;
 }
+@media screen and (max-width: 1279px) {
+  .contactForm {
+    max-width: 100%;
+  }
+  .contactForm .form {
+    max-width: 375px;
+    margin: 40px auto 0px auto;
+  }
+  .contactForm .title {
+    max-width: 375px;
+    margin: 0 auto;
+  }
+}
 
 .form {
   display: flex;
@@ -929,6 +1002,7 @@ h6 {
   border: 1px solid var(--white);
   transition: 0.3s;
   position: relative;
+  font-family: "PF-Din";
   padding: 0px 16px;
   outline: none;
   transition: 0.3s;
@@ -984,11 +1058,23 @@ h6 {
 .section--hero {
   height: 100vh;
 }
+@media screen and (max-width: 1279px) {
+  .section--hero {
+    min-height: 1024px;
+  }
+}
 .section--hero .container {
   align-content: center;
   align-items: center;
   padding: 0px 36px;
   max-width: 1440px;
+}
+@media screen and (max-width: 1279px) {
+  .section--hero .container {
+    justify-content: center;
+    align-content: space-between;
+    padding: 120px 36px 40px 36px;
+  }
 }
 .section--hero .titleWrapper {
   max-width: 480px;
@@ -996,6 +1082,12 @@ h6 {
 @media screen and (max-width: 1380px) {
   .section--hero .titleWrapper {
     max-width: 400px;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .section--hero .titleWrapper {
+    height: 100%;
+    align-content: space-between;
   }
 }
 .section--hero .section-background img.bg {
@@ -1006,6 +1098,12 @@ h6 {
   bottom: 0px;
   height: calc(100% - 100px);
   transform: translate(16%, 0%);
+}
+@media screen and (max-width: 1279px) {
+  .section--hero .section-background img.man {
+    height: 58%;
+    transform: translate(-20%, 0%);
+  }
 }
 .section--hero .section-background .tornado {
   display: flex;
@@ -1027,6 +1125,12 @@ h6 {
   height: 84%;
   transform: translate(1.6%, 0%);
   bottom: 4%;
+}
+@media screen and (max-width: 1279px) {
+  .section--hero .section-background .tornado {
+    height: 65%;
+    transform: translate(16%, 0%);
+  }
 }
 .section--hero .section-background:after {
   content: "";
@@ -1096,6 +1200,11 @@ h6 {
   width: 100%;
   margin-top: 10px;
 }
+@media screen and (max-width: 1279px) {
+  .section--steps .buttonWrapper {
+    margin-top: 50px;
+  }
+}
 .section--steps .title {
   color: var(--color);
 }
@@ -1124,6 +1233,11 @@ h6 {
   justify-content: center;
   text-align: center;
 }
+@media screen and (max-width: 1279px) {
+  .steps li {
+    width: calc((100% - 64px) / 2);
+  }
+}
 .steps li .effect {
   position: absolute;
   width: 160%;
@@ -1145,6 +1259,11 @@ h6 {
   opacity: 0.2;
   z-index: 1;
 }
+@media screen and (max-width: 1279px) {
+  .steps li:before {
+    transform: translate(-5%, 0%);
+  }
+}
 .steps li > * {
   width: 100%;
 }
@@ -1158,6 +1277,11 @@ h6 {
   width: 100%;
   position: relative;
   z-index: 2;
+}
+@media screen and (max-width: 1279px) {
+  .step-image {
+    margin-bottom: -20px;
+  }
 }
 .step-image img {
   position: absolute;
@@ -1247,6 +1371,11 @@ h6 {
   justify-content: center;
   margin-top: 20px;
 }
+@media screen and (max-width: 1279px) {
+  .promo {
+    margin-top: 100px;
+  }
+}
 
 .promoBg {
   display: block;
@@ -1255,6 +1384,11 @@ h6 {
   height: 384px;
   z-index: 0;
   bottom: 20px;
+}
+@media screen and (max-width: 1279px) {
+  .promoBg {
+    height: 280px;
+  }
 }
 
 .promo-title {
@@ -1265,6 +1399,11 @@ h6 {
   line-height: 1;
   position: relative;
   overflow: hidden;
+}
+@media screen and (max-width: 1279px) {
+  .promo-title {
+    font-size: 28px;
+  }
 }
 .promo-title p {
   position: relative;
@@ -1278,12 +1417,31 @@ h6 {
 .promo-title p:nth-child(3) {
   transform: translate(3.5%, 0%);
 }
+@media screen and (max-width: 1279px) {
+  .promo-title p:nth-child(1) {
+    transform: translate(-22%, 0%);
+  }
+  .promo-title p:nth-child(2) {
+    transform: translate(-7.5%, 0%);
+  }
+  .promo-title p:nth-child(3) {
+    transform: translate(3.5%, 0%);
+  }
+}
 .promo-title .accent {
   color: var(--accent);
   font-size: 70px;
 }
 .promo-title .accent .rub {
   font-size: 65px;
+}
+@media screen and (max-width: 1279px) {
+  .promo-title .accent {
+    font-size: 45px;
+  }
+  .promo-title .accent .rub {
+    font-size: 41px;
+  }
 }
 
 .promo-image {
@@ -1305,6 +1463,17 @@ h6 {
   width: 29.09%;
   transform: translate(-62%, 0%);
 }
+@media screen and (max-width: 1279px) {
+  .promo-image.left.top {
+    transform: translate(280%, -100%);
+  }
+  .promo-image.left.middle {
+    transform: translate(72%, -94%);
+  }
+  .promo-image.left.bottom {
+    transform: translate(20%, -120%);
+  }
+}
 .promo-image.right {
   right: 0px;
 }
@@ -1316,6 +1485,15 @@ h6 {
 .promo-image.right.bottom {
   width: 40.246%;
   transform: translate(35%, 4%);
+}
+@media screen and (max-width: 1279px) {
+  .promo-image.right.top {
+    transform: translate(-36%, -50%);
+  }
+  .promo-image.right.bottom {
+    width: 30%;
+    transform: translate(0%, 6%);
+  }
 }
 
 .section--products {
@@ -1332,6 +1510,11 @@ h6 {
   width: 100%;
   height: 100%;
   z-index: 3;
+}
+@media screen and (max-width: 1279px) {
+  .section--products .container {
+    justify-content: flex-end;
+  }
 }
 
 .products {
@@ -1350,6 +1533,12 @@ h6 {
   bottom: 4%;
   max-width: 350px;
   gap: 10px;
+}
+@media screen and (max-width: 1279px) {
+  .products .titleWrapper {
+    position: relative;
+    bottom: 0%;
+  }
 }
 .products h3.title {
   font-style: 40px;
@@ -1412,6 +1601,11 @@ h6 {
   font-size: 64px;
   line-height: 1;
 }
+@media screen and (max-width: 1279px) {
+  .section--shops .subtitle {
+    font-size: 40px;
+  }
+}
 
 .section--winners {
   padding: 120px 0px;
@@ -1425,6 +1619,7 @@ h6 {
   height: 810px;
   width: 810px;
   max-height: 810px;
+  max-width: 810px;
   border-radius: 50%;
   transform: translate(23px, 2px);
   z-index: 2;
@@ -1433,6 +1628,7 @@ h6 {
   width: 1100px;
   height: 890px;
   max-height: 890px;
+  max-width: 1100px;
   -o-object-fit: cover;
      object-fit: cover;
   transform: translate(85px, -18px);
@@ -1454,6 +1650,11 @@ h6 {
 .section--faq .titleWrapper .title {
   color: var(--color);
 }
+@media screen and (max-width: 1279px) {
+  .section--faq {
+    padding: 100px 0px 210px 0px;
+  }
+}
 
 .faq-wrapper {
   width: 100%;
@@ -1463,6 +1664,13 @@ h6 {
   justify-content: space-between;
   align-items: flex-start;
 }
+@media screen and (max-width: 1279px) {
+  .faq-wrapper {
+    justify-content: center;
+    margin-top: 40px;
+    gap: 40px;
+  }
+}
 
 .faq {
   display: flex;
@@ -1470,4 +1678,9 @@ h6 {
   max-width: 668px;
   flex-wrap: wrap;
   gap: 10px;
+}
+@media screen and (max-width: 1279px) {
+  .faq {
+    max-width: 100%;
+  }
 }

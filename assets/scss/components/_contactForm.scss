@@ -8,6 +8,17 @@
   .form {
     margin-top: 40px;
   }
+  @media screen and (max-width: 1279px) {
+    max-width: 100%;
+    .form {
+      max-width: 375px;
+      margin: 40px auto 0px auto;
+    }
+    .title {
+      max-width: 375px;
+      margin: 0 auto;
+    }
+  }
 }
 
 .form {
@@ -34,6 +45,7 @@
   border: 1px solid var(--white);
   transition: 0.3s;
   position: relative;
+  font-family: 'PF-Din';
   padding: 0px 16px;
   outline: none;
   transition: 0.3s;

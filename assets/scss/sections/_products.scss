@@ -14,6 +14,11 @@
       z-index: 3;
     }
   }
+  @media screen and (max-width: 1279px) {
+    .container {
+      justify-content: flex-end;
+    }
+  }
 }
 
 .products {
@@ -32,6 +37,10 @@
     bottom: 4%;
     max-width: 350px;
     gap: 10px;
+    @media screen and (max-width: 1279px) {
+      position: relative;
+      bottom: 0%;
+    }
   }
   h3.title {
     font-style: 40px;

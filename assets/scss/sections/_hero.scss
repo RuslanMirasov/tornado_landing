@@ -1,15 +1,27 @@
 .section--hero {
   height: 100vh;
+  @media screen and (max-width: 1279px) {
+    min-height: 1024px;
+  }
   .container {
     align-content: center;
     align-items: center;
     padding: 0px 36px;
     max-width: 1440px;
+    @media screen and (max-width: 1279px) {
+      justify-content: center;
+      align-content: space-between;
+      padding: 120px 36px 40px 36px;
+    }
   }
   .titleWrapper {
     max-width: 480px;
     @media screen and (max-width: 1380px) {
       max-width: 400px;
+    }
+    @media screen and (max-width: 1279px) {
+      height: 100%;
+      align-content: space-between;
     }
   }
   .section-background {
@@ -22,6 +34,10 @@
         bottom: 0px;
         height: calc(100% - 100px);
         transform: translate(16%, 0%);
+        @media screen and (max-width: 1279px) {
+          height: 58%;
+          transform: translate(-20%, 0%);
+        }
       }
     }
     .tornado {
@@ -43,6 +59,10 @@
         height: 84%;
         transform: translate(1.6%, 0%);
         bottom: 4%;
+      }
+      @media screen and (max-width: 1279px) {
+        height: 65%;
+        transform: translate(16%, 0%);
       }
     }
     &:after {
