@@ -22,14 +22,14 @@
   position: relative;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 40px 136px;
+  gap: 40px 64px;
   li {
     counter-increment: item;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    width: calc((100% - 3 * 136px) / 4);
+    width: calc((100% - 3 * 64px) / 4);
     justify-content: center;
     text-align: center;
     .effect {
@@ -38,6 +38,7 @@
       max-width: 160%;
       transform: translate(0%, -15%);
       z-index: 0;
+      border-radius: 300px;
     }
     &:before {
       content: counter(item);

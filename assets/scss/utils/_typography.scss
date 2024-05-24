@@ -35,6 +35,15 @@ h6 {
     .skills {
       font-size: 167.48px;
     }
+    @media screen and (max-width: 1380px) {
+      font-size: 70px;
+      .tornado {
+        font-size: 90.5px;
+      }
+      .skills {
+        font-size: 138px;
+      }
+    }
   }
   &.title--h2 {
     font-size: 48px;
