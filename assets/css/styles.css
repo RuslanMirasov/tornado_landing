@@ -285,6 +285,17 @@ h6 {
     font-size: 138px;
   }
 }
+@media screen and (max-width: 767px) {
+  .title.title--h1 {
+    font-size: 45.36px;
+  }
+  .title.title--h1 .tornado {
+    font-size: 60.48px;
+  }
+  .title.title--h1 .skills {
+    font-size: 90.72px;
+  }
+}
 .title.title--h2 {
   font-size: 48px;
 }
@@ -293,12 +304,22 @@ h6 {
     font-size: 36px;
   }
 }
+@media screen and (max-width: 767px) {
+  .title.title--h2 {
+    font-size: 28px;
+  }
+}
 .title.title--h3 {
   font-size: 32.41px;
 }
 .title.title--h4 {
   font-size: 40px;
   line-height: 1;
+}
+@media screen and (max-width: 767px) {
+  .title.title--h4 {
+    font-size: 23px;
+  }
 }
 .title.title--h5, .title.title--h6 {
   font-size: 18px;
@@ -311,6 +332,11 @@ h6 {
 @media screen and (max-width: 1279px) {
   .title.title--shops {
     font-size: 46px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .title.title--shops {
+    font-size: 32px;
   }
 }
 
@@ -378,6 +404,11 @@ h6 {
     padding-left: 34px;
   }
 }
+@media screen and (max-width: 767px) {
+  .header .container {
+    padding-left: 20px;
+  }
+}
 .header .button {
   height: 40px;
 }
@@ -386,9 +417,24 @@ h6 {
     padding: 0px 20px;
   }
 }
+@media screen and (max-width: 767px) {
+  .header .button {
+    height: 32px;
+    font-size: 14px;
+    padding: 0px 16px;
+  }
+  .header .button.arrow {
+    padding-right: 16px;
+  }
+}
 @media screen and (max-width: 1279px) {
   .header .buttonWrapper .button:first-child {
     display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header {
+    height: 50px;
   }
 }
 
@@ -404,7 +450,13 @@ h6 {
     gap: 10px;
   }
   .logo img {
-    height: 34px;
+    height: 32px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .logo svg {
+    width: 12px;
+    height: 12px;
   }
 }
 
@@ -432,6 +484,70 @@ h6 {
   }
 }
 
+.mobil-navigation {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+  .mobil-navigation {
+    display: block;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    z-index: 20;
+    padding: 0px 20px;
+    background: var(--black);
+  }
+  .mobil-navigation .menu {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .mobil-navigation .menu li {
+    display: block;
+    height: 100%;
+    text-align: center;
+  }
+  .mobil-navigation .menu li a {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--white);
+  }
+  .mobil-navigation .menu li a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: var(--white);
+    top: -3px;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .mobil-navigation .menu li a:hover {
+    color: var(--color);
+  }
+  .mobil-navigation .menu li a:hover:before {
+    content: "";
+    background: var(--color);
+    opacity: 1;
+  }
+}
 .header-btn {
   display: inline-flex;
   flex-wrap: wrap;
@@ -540,6 +656,12 @@ h6 {
   width: 25px;
   height: 14px;
   transform: translate(0px, 0px);
+}
+@media screen and (max-width: 767px) {
+  .button.arrow:after {
+    width: 18px;
+    height: 16px;
+  }
 }
 .button.arrow:hover:after {
   transform: translate(6px, 0px);
@@ -652,10 +774,15 @@ h6 {
   height: 100%;
   overflow: hidden;
 }
-.section-background img {
+.section-background img,
+.section-background picture {
   position: absolute;
   max-height: 100%;
   z-index: 1;
+}
+.section-background picture img {
+  width: 100%;
+  height: 100%;
 }
 .section-background:before {
   z-index: 2;
@@ -727,6 +854,14 @@ h6 {
 .shops li {
   width: calc((100% - 40px) / 3);
 }
+@media screen and (max-width: 767px) {
+  .shops {
+    margin-top: 40px;
+  }
+  .shops li {
+    width: calc((100% - 20px) / 2);
+  }
+}
 
 .schop-link {
   display: inline-flex;
@@ -748,6 +883,14 @@ h6 {
 @media screen and (max-width: 1279px) {
   .schop-link {
     font-size: 26px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .schop-link {
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1;
   }
 }
 .schop-link:before {
@@ -790,6 +933,11 @@ h6 {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 767px) {
+  .winnersTable {
+    margin-top: 30px;
+  }
+}
 .winnersTable thead {
   font-size: 24px;
   font-family: "Cartoon";
@@ -809,6 +957,16 @@ h6 {
     padding-bottom: 0px;
   }
 }
+@media screen and (max-width: 767px) {
+  .winnersTable thead {
+    font-size: 14px;
+    font-family: "PF-Din";
+    font-weight: 500;
+  }
+  .winnersTable thead th {
+    padding: 0;
+  }
+}
 .winnersTable tbody tr {
   display: flex;
   justify-content: space-between;
@@ -819,6 +977,11 @@ h6 {
 .winnersTable tbody tr:hover {
   border-bottom: 1px solid var(--color);
   color: var(--color);
+}
+@media screen and (max-width: 767px) {
+  .winnersTable tbody tr {
+    font-size: 12px;
+  }
 }
 .winnersTable td,
 .winnersTable th {
@@ -833,6 +996,20 @@ h6 {
 .winnersTable th:nth-child(3) {
   min-width: 150px;
 }
+@media screen and (max-width: 767px) {
+  .winnersTable td:nth-child(1), .winnersTable td:nth-child(2), .winnersTable td:nth-child(3), .winnersTable td:nth-child(4),
+.winnersTable th:nth-child(1),
+.winnersTable th:nth-child(2),
+.winnersTable th:nth-child(3),
+.winnersTable th:nth-child(4) {
+    min-width: 24%;
+    width: 24%;
+  }
+  .winnersTable td:nth-child(4),
+.winnersTable th:nth-child(4) {
+    text-align: right;
+  }
+}
 
 .pagination {
   display: flex;
@@ -841,6 +1018,11 @@ h6 {
   align-content: center;
   margin: 0 auto;
   margin-top: 48px;
+}
+@media screen and (max-width: 767px) {
+  .pagination {
+    margin-top: 24px;
+  }
 }
 .pagination svg {
   stroke: currentColor;
@@ -1041,6 +1223,12 @@ h6 {
   flex-wrap: nowrap;
   gap: 18px;
 }
+@media screen and (max-width: 767px) {
+  .socials {
+    width: 100%;
+    justify-content: center;
+  }
+}
 .socials a {
   display: flex;
   justify-content: center;
@@ -1063,6 +1251,11 @@ h6 {
     min-height: 1024px;
   }
 }
+@media screen and (max-width: 767px) {
+  .section--hero {
+    min-height: 667px;
+  }
+}
 .section--hero .container {
   align-content: center;
   align-items: center;
@@ -1074,6 +1267,11 @@ h6 {
     justify-content: center;
     align-content: space-between;
     padding: 120px 36px 40px 36px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section--hero .container {
+    padding: 80px 20px 40px 20px;
   }
 }
 .section--hero .titleWrapper {
@@ -1090,19 +1288,40 @@ h6 {
     align-content: space-between;
   }
 }
-.section--hero .section-background img.bg {
+@media screen and (max-width: 767px) {
+  .section--hero .titleWrapper {
+    text-align: center;
+  }
+}
+.section--hero .section-background picture.bg {
   width: 100%;
   height: 100%;
 }
-.section--hero .section-background img.man {
+.section--hero .section-background picture.man {
+  width: 100%;
   bottom: 0px;
   height: calc(100% - 100px);
-  transform: translate(16%, 0%);
+  transform: translate(7%, 0%);
+}
+.section--hero .section-background picture.man img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (max-width: 1279px) {
-  .section--hero .section-background img.man {
+  .section--hero .section-background picture.man {
     height: 58%;
     transform: translate(-20%, 0%);
+    left: 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section--hero .section-background picture.man {
+    height: 61%;
+    transform: translate(0%, 0%);
+    left: 0px;
+  }
+  .section--hero .section-background picture.man img {
+    width: auto;
   }
 }
 .section--hero .section-background .tornado {
@@ -1117,8 +1336,15 @@ h6 {
   left: 0%;
   transform: translate(24%, 0%);
 }
+.section--hero .section-background .tornado picture {
+  width: 100%;
+  height: 100%;
+}
 .section--hero .section-background .tornado .can {
   height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
   transform: translate(0%, 0%);
 }
 .section--hero .section-background .tornado .animation {
@@ -1128,8 +1354,28 @@ h6 {
 }
 @media screen and (max-width: 1279px) {
   .section--hero .section-background .tornado {
-    height: 65%;
-    transform: translate(16%, 0%);
+    height: 80%;
+    transform: translate(0%, -5%);
+  }
+  .section--hero .section-background .tornado .can {
+    width: auto;
+    right: 0px;
+  }
+  .section--hero .section-background .tornado .animation {
+    width: auto;
+    right: 0%;
+    transform: translate(26%, 0%);
+  }
+}
+@media screen and (max-width: 767px) {
+  .section--hero .section-background .tornado {
+    height: 64%;
+    transform: translate(0%, -20%);
+  }
+  .section--hero .section-background .tornado .animation {
+    width: auto;
+    right: 0%;
+    transform: translate(26%, 0%);
   }
 }
 .section--hero .section-background:after {
@@ -1158,6 +1404,12 @@ h6 {
   .hero-subtitle {
     max-width: 183px;
     font-size: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-subtitle {
+    transform: translate(70%, -15%) rotate(-10deg);
+    padding: 20px 20px;
   }
 }
 
@@ -1191,9 +1443,21 @@ h6 {
     width: 30px;
   }
 }
+@media screen and (max-width: 767px) {
+  .scrolldown {
+    width: 20px;
+    left: 28px;
+    bottom: 60px;
+  }
+}
 
 .section--steps {
   padding: 80px 0px;
+}
+@media screen and (max-width: 767px) {
+  .section--steps {
+    padding: 40px 0px;
+  }
 }
 .section--steps .buttonWrapper {
   justify-content: center;
@@ -1223,6 +1487,11 @@ h6 {
   align-items: flex-start;
   gap: 40px 64px;
 }
+@media screen and (max-width: 767px) {
+  .steps {
+    justify-content: center;
+  }
+}
 .steps li {
   counter-increment: item;
   position: relative;
@@ -1236,6 +1505,11 @@ h6 {
 @media screen and (max-width: 1279px) {
   .steps li {
     width: calc((100% - 64px) / 2);
+  }
+}
+@media screen and (max-width: 767px) {
+  .steps li {
+    width: 240px;
   }
 }
 .steps li .effect {
@@ -1298,6 +1572,11 @@ h6 {
 .section--promo {
   height: auto;
   padding: 80px 0px 50px 0px;
+}
+@media screen and (max-width: 767px) {
+  .section--promo {
+    padding: 40px 0px 25px 0px;
+  }
 }
 
 .truck {
@@ -1372,8 +1651,25 @@ h6 {
   margin-top: 20px;
 }
 @media screen and (max-width: 1279px) {
+  .promo .buttonWrapper {
+    margin-top: 10px;
+  }
+  .promo .buttonWrapper .button {
+    font-size: 16px;
+    height: 34px;
+    padding: 0px 20px;
+    text-transform: capitalize;
+  }
+}
+@media screen and (max-width: 1279px) {
   .promo {
     margin-top: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .promo {
+    max-width: 360px;
+    margin-top: 20px;
   }
 }
 
@@ -1390,6 +1686,12 @@ h6 {
     height: 280px;
   }
 }
+@media screen and (max-width: 767px) {
+  .promoBg {
+    height: 300px;
+    width: 108%;
+  }
+}
 
 .promo-title {
   font-family: "PF-Din";
@@ -1403,6 +1705,11 @@ h6 {
 @media screen and (max-width: 1279px) {
   .promo-title {
     font-size: 28px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .promo-title {
+    font-size: 16px;
   }
 }
 .promo-title p {
@@ -1428,6 +1735,11 @@ h6 {
     transform: translate(3.5%, 0%);
   }
 }
+@media screen and (max-width: 767px) {
+  .promo-title p:nth-child(1) {
+    transform: translate(-28%, 0%);
+  }
+}
 .promo-title .accent {
   color: var(--accent);
   font-size: 70px;
@@ -1441,6 +1753,14 @@ h6 {
   }
   .promo-title .accent .rub {
     font-size: 41px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .promo-title .accent {
+    font-size: 30px;
+  }
+  .promo-title .accent .rub {
+    font-size: 28px;
   }
 }
 
@@ -1474,6 +1794,17 @@ h6 {
     transform: translate(20%, -120%);
   }
 }
+@media screen and (max-width: 767px) {
+  .promo-image.left.top {
+    transform: translate(280%, -20%);
+  }
+  .promo-image.left.middle {
+    transform: translate(30%, -156%);
+  }
+  .promo-image.left.bottom {
+    transform: translate(14%, -134%);
+  }
+}
 .promo-image.right {
   right: 0px;
 }
@@ -1495,9 +1826,22 @@ h6 {
     transform: translate(0%, 6%);
   }
 }
+@media screen and (max-width: 767px) {
+  .promo-image.right.top {
+    transform: translate(-34%, 40%);
+  }
+  .promo-image.right.bottom {
+    transform: translate(15%, -10%);
+  }
+}
 
 .section--products {
   padding: 80px 0px;
+}
+@media screen and (max-width: 1279px) {
+  .section--products {
+    padding: 0px 0px 40px 0px;
+  }
 }
 .section--products .section-background .animation {
   height: 100%;
@@ -1540,6 +1884,12 @@ h6 {
     bottom: 0%;
   }
 }
+@media screen and (max-width: 767px) {
+  .products .titleWrapper {
+    max-width: 210px;
+    margin-top: 40px;
+  }
+}
 .products h3.title {
   font-style: 40px;
   color: var(--color);
@@ -1548,6 +1898,12 @@ h6 {
   font-size: 18px;
   line-height: 1.2;
   max-width: 260px;
+}
+@media screen and (max-width: 767px) {
+  .products .subtitle {
+    font-size: 12px;
+    max-width: 170px;
+  }
 }
 
 .products-images {
@@ -1594,6 +1950,11 @@ h6 {
 .section--shops {
   padding: 50px 0px 120px 0px;
 }
+@media screen and (max-width: 767px) {
+  .section--shops {
+    padding: 50px 0px 80px 0px;
+  }
+}
 .section--shops .title {
   color: var(--color);
 }
@@ -1606,11 +1967,30 @@ h6 {
     font-size: 40px;
   }
 }
+@media screen and (max-width: 767px) {
+  .section--shops .subtitle {
+    font-size: 20px;
+  }
+}
 
 .section--winners {
   padding: 120px 0px;
   background: rgb(63, 59, 14);
   background: linear-gradient(180deg, rgb(63, 59, 14) 0%, rgb(17, 17, 17) 50%, rgb(63, 59, 14) 100%);
+}
+@media screen and (max-width: 767px) {
+  .section--winners {
+    padding: 70px 0px;
+  }
+  .section--winners .titleWrapper {
+    justify-content: center;
+  }
+  .section--winners .titleWrapper .button {
+    width: 100%;
+    font-size: 14px;
+    padding: 0px 10px;
+    padding-right: 10px;
+  }
 }
 .section--winners .container {
   max-width: 1000px;
@@ -1641,6 +2021,24 @@ h6 {
   max-height: 1100px;
   transform: translate(-16px, -10px);
 }
+@media screen and (max-width: 767px) {
+  .section--winners .section-background img.animation {
+    height: 375px;
+    width: 375px;
+    max-height: 375px;
+    max-width: 375px;
+    transform: translate(0px, 0px);
+  }
+  .section--winners .section-background img.svg {
+    display: none;
+  }
+  .section--winners .section-background img.bg {
+    height: 500px;
+    width: 375px;
+    max-height: 500px;
+    transform: translate(-15px, -2px);
+  }
+}
 
 .section--faq {
   padding: 100px 0px 250px 0px;
@@ -1652,6 +2050,8 @@ h6 {
 }
 @media screen and (max-width: 1279px) {
   .section--faq {
+    background: url("../img/faq/faqBg.png") repeat center center;
+    background-size: 120% auto;
     padding: 100px 0px 210px 0px;
   }
 }

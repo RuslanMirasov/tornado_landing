@@ -3,6 +3,9 @@
   @media screen and (max-width: 1279px) {
     min-height: 1024px;
   }
+  @media screen and (max-width: 767px) {
+    min-height: 667px;
+  }
   .container {
     align-content: center;
     align-items: center;
@@ -12,6 +15,9 @@
       justify-content: center;
       align-content: space-between;
       padding: 120px 36px 40px 36px;
+    }
+    @media screen and (max-width: 767px) {
+      padding: 80px 20px 40px 20px;
     }
   }
   .titleWrapper {
@@ -23,23 +29,51 @@
       height: 100%;
       align-content: space-between;
     }
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
   .section-background {
-    img {
+    picture {
       &.bg {
         width: 100%;
         height: 100%;
       }
       &.man {
+        width: 100%;
         bottom: 0px;
         height: calc(100% - 100px);
-        transform: translate(16%, 0%);
+        transform: translate(7%, 0%);
+        img {
+          object-fit: contain;
+        }
         @media screen and (max-width: 1279px) {
           height: 58%;
           transform: translate(-20%, 0%);
+          left: 0px;
+        }
+        @media screen and (max-width: 767px) {
+          height: 61%;
+          transform: translate(0%, 0%);
+          left: 0px;
+          img {
+            width: auto;
+          }
         }
       }
     }
+    // img {
+    //   &.man {
+    //     bottom: 0px;
+    //     height: calc(100% - 100px);
+    //     transform: translate(16%, 0%);
+    //     @media screen and (max-width: 1279px) {
+    //       height: 55%;
+    //       transform: translate(5%, 0%);
+    //       left: 0px;
+    //     }
+    //   }
+    // }
     .tornado {
       display: flex;
       flex-wrap: wrap;
@@ -51,8 +85,14 @@
       height: calc(100% - 70px);
       left: 0%;
       transform: translate(24%, 0%);
+      picture {
+        width: 100%;
+        height: 100%;
+      }
       .can {
         height: 100%;
+        width: 100%;
+        object-fit: contain;
         transform: translate(0%, 0%);
       }
       .animation {
@@ -61,8 +101,26 @@
         bottom: 4%;
       }
       @media screen and (max-width: 1279px) {
-        height: 65%;
-        transform: translate(16%, 0%);
+        height: 80%;
+        transform: translate(0%, -5%);
+        .can {
+          width: auto;
+          right: 0px;
+        }
+        .animation {
+          width: auto;
+          right: 0%;
+          transform: translate(26%, 0%);
+        }
+      }
+      @media screen and (max-width: 767px) {
+        height: 64%;
+        transform: translate(0%, -20%);
+        .animation {
+          width: auto;
+          right: 0%;
+          transform: translate(26%, 0%);
+        }
       }
     }
     &:after {
@@ -92,6 +150,10 @@
     max-width: 183px;
     font-size: 18px;
   }
+  @media screen and (max-width: 767px) {
+    transform: translate(70%, -15%) rotate(-10deg);
+    padding: 20px 20px;
+  }
 }
 
 .scrolldown {
@@ -120,5 +182,10 @@
   }
   @media screen and (max-width: 1380px) {
     width: 30px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 20px;
+    left: 28px;
+    bottom: 60px;
   }
 }

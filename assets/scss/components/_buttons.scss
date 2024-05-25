@@ -74,6 +74,7 @@
   // button with arrow
   &.arrow {
     padding-right: 24px;
+
     &:after {
       content: url(../img/svg/arrow.svg);
       position: relative;
@@ -81,6 +82,10 @@
       width: 25px;
       height: 14px;
       transform: translate(0px, 0px);
+      @media screen and (max-width: 767px) {
+        width: 18px;
+        height: 16px;
+      }
     }
     &:hover {
       &:after {

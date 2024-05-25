@@ -3,6 +3,9 @@
 .section--promo {
   height: auto;
   padding: 80px 0px 50px 0px;
+  @media screen and (max-width: 767px) {
+    padding: 40px 0px 25px 0px;
+  }
 }
 
 .truck {
@@ -74,9 +77,22 @@
     width: 100%;
     justify-content: center;
     margin-top: 20px;
+    @media screen and (max-width: 1279px) {
+      margin-top: 10px;
+      .button {
+        font-size: 16px;
+        height: 34px;
+        padding: 0px 20px;
+        text-transform: capitalize;
+      }
+    }
   }
   @media screen and (max-width: 1279px) {
     margin-top: 100px;
+  }
+  @media screen and (max-width: 767px) {
+    max-width: 360px;
+    margin-top: 20px;
   }
 }
 
@@ -90,6 +106,10 @@
   @media screen and (max-width: 1279px) {
     height: 280px;
   }
+  @media screen and (max-width: 767px) {
+    height: 300px;
+    width: 108%;
+  }
 }
 
 .promo-title {
@@ -102,6 +122,9 @@
   overflow: hidden;
   @media screen and (max-width: 1279px) {
     font-size: 28px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
   }
   p {
     position: relative;
@@ -125,6 +148,11 @@
         transform: translate(3.5%, 0%);
       }
     }
+    @media screen and (max-width: 767px) {
+      &:nth-child(1) {
+        transform: translate(-28%, 0%);
+      }
+    }
   }
   .accent {
     color: var(--accent);
@@ -136,6 +164,12 @@
       font-size: 45px;
       .rub {
         font-size: 41px;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 30px;
+      .rub {
+        font-size: 28px;
       }
     }
   }
@@ -169,6 +203,17 @@
         transform: translate(20%, -120%);
       }
     }
+    @media screen and (max-width: 767px) {
+      &.top {
+        transform: translate(280%, -20%);
+      }
+      &.middle {
+        transform: translate(30%, -156%);
+      }
+      &.bottom {
+        transform: translate(14%, -134%);
+      }
+    }
   }
   &.right {
     right: 0px;
@@ -188,6 +233,14 @@
       &.bottom {
         width: 30%;
         transform: translate(0%, 6%);
+      }
+    }
+    @media screen and (max-width: 767px) {
+      &.top {
+        transform: translate(-34%, 40%);
+      }
+      &.bottom {
+        transform: translate(15%, -10%);
       }
     }
   }

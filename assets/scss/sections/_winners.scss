@@ -7,6 +7,18 @@
     rgba(17, 17, 17, 1) 50%,
     rgba(63, 59, 14, 1) 100%
   );
+  @media screen and (max-width: 767px) {
+    padding: 70px 0px;
+    .titleWrapper {
+      justify-content: center;
+      .button {
+        width: 100%;
+        font-size: 14px;
+        padding: 0px 10px;
+        padding-right: 10px;
+      }
+    }
+  }
   .container {
     max-width: 1000px;
   }
@@ -36,6 +48,26 @@
         width: 1100px;
         max-height: 1100px;
         transform: translate(-16px, -10px);
+      }
+    }
+    @media screen and (max-width: 767px) {
+      img {
+        &.animation {
+          height: 375px;
+          width: 375px;
+          max-height: 375px;
+          max-width: 375px;
+          transform: translate(0px, 0px);
+        }
+        &.svg {
+          display: none;
+        }
+        &.bg {
+          height: 500px;
+          width: 375px;
+          max-height: 500px;
+          transform: translate(-15px, -2px);
+        }
       }
     }
   }

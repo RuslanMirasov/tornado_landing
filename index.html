@@ -69,27 +69,30 @@
       <!-- Section Hero -->
       <section class="section section--hero">
         <div class="section-background">
-          <img
-            srcset="./assets/img/hero/bg.jpg 1x, ./assets/img/hero/bg@2x.jpg 2x"
-            src="./assets/img/hero/bg.jpg"
-            alt="Tornado Energy"
-            class="bg"
-          />
+          <picture class="bg">
+            <source srcset="./assets/img/hero/bg_mobil.jpg" media="(max-width: 767px)" />
+            <source srcset="./assets/img/hero/bg.jpg 1x, ./assets/img/hero/bg@2x.jpg 2x" />
+            <img src="./assets/img/hero/bg.jpg" alt="Tornado Energy" />
+          </picture>
           <div class="tornado">
-            <img
-              srcset="./assets/img/hero/can.png 1x, ./assets/img/hero/can@2x.png 2x"
-              src="./assets/img/hero/can.png"
-              alt="Tornado Energy"
-              class="can"
-            />
+            <picture>
+              <source srcset="./assets/img/hero/can_mobil.png" media="(max-width: 1279px)" />
+              <source srcset="./assets/img/hero/can.png 1x, ./assets/img/hero/can@2x.png 2x" />
+              <img src="./assets/img/hero/can.png" alt="Tornado Energy" class="can" />
+            </picture>
             <img src="./assets/img/hero/hero.gif" alt="Tornado Energy" class="animation" />
           </div>
-          <img
+          <picture class="man">
+            <source srcset="./assets/img/hero/man_mobil.png" media="(max-width: 767px)" />
+            <source srcset="./assets/img/hero/man.png 1x, ./assets/img/hero/man@2x.png 2x" />
+            <img src="./assets/img/hero/man.png" alt="Tornado Energy" />
+          </picture>
+          <!-- <img
             srcset="./assets/img/hero/man.png 1x, ./assets/img/hero/man@2x.png 2x"
             src="./assets/img/hero/man.png"
             alt="Tornado Energy"
             class="man"
-          />
+          /> -->
         </div>
         <div class="container">
           <div class="titleWrapper">
@@ -871,6 +874,16 @@
       </section>
     </main>
 
+    <!--Mobil Navigation-->
+    <nav class="mobil-navigation">
+      <menu class="menu">
+        <li><a href="#" data-scrollto="section--hero">Главная</a></li>
+        <li><a href="#" data-scrollto="section--products">Продукция</a></li>
+        <li><a href="#" data-scrollto="section--shops">Где купить</a></li>
+        <li><a href="#" data-scrollto="section--faq">Частые вопросы</a></li>
+        <li><a href="https://promo.tornadoenergy.me/rules.pdf?v=1" target="_blank">Правила</a></li>
+      </menu>
+    </nav>
     <script src="./assets/js/scripts.min.js" type="module"></script>
   </body>
 </html>

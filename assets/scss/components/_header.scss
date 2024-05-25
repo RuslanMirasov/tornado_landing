@@ -22,11 +22,22 @@
     @media screen and (max-width: 1279px) {
       padding-left: 34px;
     }
+    @media screen and (max-width: 767px) {
+      padding-left: 20px;
+    }
   }
   .button {
     height: 40px;
     @media screen and (max-width: 1380px) {
       padding: 0px 20px;
+    }
+    @media screen and (max-width: 767px) {
+      height: 32px;
+      font-size: 14px;
+      padding: 0px 16px;
+      &.arrow {
+        padding-right: 16px;
+      }
     }
   }
   @media screen and (max-width: 1279px) {
@@ -37,6 +48,9 @@
         }
       }
     }
+  }
+  @media screen and (max-width: 767px) {
+    height: 50px;
   }
 }
 
@@ -49,7 +63,13 @@
   @media screen and (max-width: 1279px) {
     gap: 10px;
     img {
-      height: 34px;
+      height: 32px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    svg {
+      width: 12px;
+      height: 12px;
     }
   }
 }
@@ -72,6 +92,71 @@
     gap: 16px;
     a {
       font-size: 14px;
+    }
+  }
+}
+
+.mobil-navigation {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+  .mobil-navigation {
+    display: block;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    z-index: 20;
+    padding: 0px 20px;
+    background: var(--black);
+    .menu {
+      display: inline-flex;
+      width: 100%;
+      height: 100%;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-content: center;
+      li {
+        display: block;
+        height: 100%;
+        text-align: center;
+        a {
+          display: flex;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          position: relative;
+          font-size: 12px;
+          line-height: 12px;
+          color: var(--white);
+          &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: var(--white);
+            top: -3px;
+            transform: rotate(45deg);
+            opacity: 0;
+            transition: 0.3s;
+          }
+          &:hover {
+            color: var(--color);
+            &:before {
+              content: '';
+              background: var(--color);
+              opacity: 1;
+            }
+          }
+        }
+      }
     }
   }
 }

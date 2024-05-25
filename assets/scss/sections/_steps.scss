@@ -1,5 +1,8 @@
 .section--steps {
   padding: 80px 0px;
+  @media screen and (max-width: 767px) {
+    padding: 40px 0px;
+  }
   .buttonWrapper {
     justify-content: center;
     width: 100%;
@@ -26,6 +29,9 @@
   justify-content: flex-start;
   align-items: flex-start;
   gap: 40px 64px;
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
   li {
     counter-increment: item;
     position: relative;
@@ -37,6 +43,9 @@
     text-align: center;
     @media screen and (max-width: 1279px) {
       width: calc((100% - 64px) / 2);
+    }
+    @media screen and (max-width: 767px) {
+      width: 240px;
     }
     .effect {
       position: absolute;
