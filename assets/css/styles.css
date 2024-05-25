@@ -851,6 +851,11 @@ h6 {
   text-transform: uppercase;
   color: #1f1f1f;
 }
+@media screen and (max-width: 767px) {
+  .runText {
+    font-size: 150px;
+  }
+}
 
 .runText__inner {
   display: inline-flex;

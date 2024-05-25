@@ -9,6 +9,9 @@
   letter-spacing: -0.06em;
   text-transform: uppercase;
   color: #1f1f1f;
+  @media screen and (max-width: 767px) {
+    font-size: 150px;
+  }
 }
 
 .runText__inner {
