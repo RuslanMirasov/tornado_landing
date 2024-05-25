@@ -12,6 +12,12 @@
     background-size: 120% auto;
     padding: 100px 0px 210px 0px;
   }
+  @media screen and (max-width: 767px) {
+    padding: 80px 0px 0px 0px;
+    .container {
+      padding: 0;
+    }
+  }
 }
 
 .faq-wrapper {

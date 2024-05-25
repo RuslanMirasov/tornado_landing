@@ -714,6 +714,30 @@ h6 {
   padding: 0px 36px;
   max-width: 1440px;
 }
+@media screen and (max-width: 767px) {
+  .footer .container {
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    position: relative;
+    padding: 50px 20px 80px 20px;
+    align-items: flex-end;
+  }
+  .footer p:first-child {
+    order: 1;
+  }
+  .footer p:nth-child(2) {
+    order: 3;
+  }
+  .footer .footerNavigation {
+    order: 2;
+  }
+  .footer .socials {
+    order: 4;
+  }
+}
 
 .footerNavigation {
   display: inline-flex;
@@ -724,6 +748,16 @@ h6 {
 .footerNavigation a {
   color: var(--color);
   border-bottom: 1px solid var(--color);
+}
+@media screen and (max-width: 767px) {
+  .footerNavigation {
+    width: 55%;
+    text-align: right;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
 }
 
 .section {
@@ -1157,6 +1191,14 @@ h6 {
   .contactForm .title {
     max-width: 375px;
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contactForm {
+    padding: 50px 20px;
+  }
+  .contactForm .form {
+    max-width: 260px;
   }
 }
 
@@ -2053,6 +2095,14 @@ h6 {
     background: url("../img/faq/faqBg.png") repeat center center;
     background-size: 120% auto;
     padding: 100px 0px 210px 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section--faq {
+    padding: 80px 0px 0px 0px;
+  }
+  .section--faq .container {
+    padding: 0;
   }
 }
 
