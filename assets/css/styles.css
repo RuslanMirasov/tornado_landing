@@ -1450,7 +1450,7 @@ h6 {
 }
 @media screen and (max-width: 767px) {
   .hero-subtitle {
-    transform: translate(70%, -15%) rotate(-10deg);
+    transform: translate(70%, -80%) rotate(-10deg);
     padding: 20px 20px;
   }
 }
@@ -1489,7 +1489,7 @@ h6 {
   .scrolldown {
     width: 20px;
     left: 28px;
-    bottom: 60px;
+    bottom: 100px;
   }
 }
 
