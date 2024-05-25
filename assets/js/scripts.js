@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const elementWidth = element.offsetWidth;
     const parentElementWidth = element.parentElement.offsetWidth;
     const markup = element.innerHTML;
-    const newMarkup = [];
+    const newMarkup = [markup];
     let counter = elementWidth;
 
     while (counter < parentElementWidth * 2) {
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ------------------------------FORM VALIDATION-------------------------------
+  // ------------------------------FORM SEND AND VALIDATION-------------------------------
 
   //CLEAN INPUT ON FOCUS
   refs.inputs.forEach(input => {
