@@ -25,48 +25,45 @@
   .section-background {
     img {
       &.animation {
-        height: 810px;
-        width: 810px;
-        max-height: 810px;
-        max-width: 810px;
+        width: 700px;
+        max-width: 700px;
+        height: 700px;
+        max-height: 700px;
         border-radius: 50%;
-        transform: translate(23px, 2px);
-        z-index: 2;
       }
       &.svg {
-        width: 1100px;
-        height: 890px;
-        max-height: 890px;
-        max-width: 1100px;
+        width: auto;
+        max-width: 100%;
+        height: 100%;
+        max-height: 1000px;
         object-fit: cover;
-        transform: translate(85px, -18px);
-        z-index: 1;
       }
-      &.bg {
-        z-index: 2;
-        height: 1100px;
-        width: 1100px;
-        max-height: 1100px;
-        transform: translate(-16px, -10px);
-      }
-    }
-    @media screen and (max-width: 767px) {
-      img {
+      @media screen and (max-width: 1279px) {
         &.animation {
-          height: 375px;
-          width: 375px;
-          max-height: 375px;
-          max-width: 375px;
-          transform: translate(0px, 0px);
+          width: 500px;
+          max-width: 500px;
+          height: 500px;
+          max-height: 500px;
         }
         &.svg {
-          display: none;
+          width: auto;
+          max-width: 100%;
+          height: 100%;
+          max-height: 800px;
         }
-        &.bg {
-          height: 500px;
-          width: 375px;
+      }
+      @media screen and (max-width: 767px) {
+        &.animation {
+          width: 350px;
+          max-width: 350px;
+          height: 350px;
+          max-height: 350px;
+        }
+        &.svg {
+          width: auto;
+          max-width: 100%;
+          height: 100%;
           max-height: 500px;
-          transform: translate(-15px, -2px);
         }
       }
     }
