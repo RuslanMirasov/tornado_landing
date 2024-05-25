@@ -185,7 +185,6 @@ body {
 
 header,
 footer {
-  font-display: block;
   width: 100%;
 }
 
@@ -1933,7 +1932,6 @@ h6 {
   }
 }
 .products h3.title {
-  font-style: 40px;
   color: var(--color);
 }
 .products .subtitle {
