@@ -16,6 +16,9 @@
       height: 100%;
       z-index: 3;
     }
+    &:before {
+      z-index: 4;
+    }
   }
   @media screen and (max-width: 1279px) {
     .container {
