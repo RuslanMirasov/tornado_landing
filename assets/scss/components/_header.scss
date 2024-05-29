@@ -37,6 +37,9 @@
       padding: 0px 16px;
       &.arrow {
         padding-right: 16px;
+        span {
+          margin-bottom: -5%;
+        }
       }
     }
   }

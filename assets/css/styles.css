@@ -311,6 +311,11 @@ h6 {
 .title.title--h3 {
   font-size: 32.41px;
 }
+@media screen and (max-width: 767px) {
+  .title.title--h3 {
+    line-height: 30.27px;
+  }
+}
 .title.title--h4 {
   font-size: 40px;
   line-height: 1;
@@ -352,7 +357,7 @@ h6 {
 }
 
 .rub {
-  font-family: "Arial";
+  font-family: "San Francisco", "Arial", "PF-Din", sans-serif;
   font-weight: 700;
 }
 
@@ -424,6 +429,9 @@ h6 {
   }
   .header .button.arrow {
     padding-right: 16px;
+  }
+  .header .button.arrow span {
+    margin-bottom: -5%;
   }
 }
 @media screen and (max-width: 1279px) {
@@ -604,10 +612,11 @@ h6 {
   line-height: 1;
   text-transform: uppercase;
   transition: 0.3s;
-  height: 53px;
+  height: 52px;
   z-index: 1;
 }
 .button span {
+  display: flex;
   position: relative;
   z-index: 2;
 }
@@ -643,23 +652,30 @@ h6 {
   content: none;
 }
 .button.button--black.arrow:after {
-  content: url(../img/svg/arrow_white.svg);
+  background: url(../img/svg/arrow_white.svg) no-repeat center center;
 }
 .button.arrow {
   padding-right: 24px;
 }
+@media screen and (max-width: 767px) {
+  .button.arrow span {
+    margin-bottom: -1%;
+  }
+}
 .button.arrow:after {
-  content: url(../img/svg/arrow.svg);
+  content: "";
+  background: url(../img/svg/arrow.svg) no-repeat center center;
+  background-size: 25px 13px;
   position: relative;
   transition: 0.3s;
   width: 25px;
-  height: 14px;
+  height: 100%;
   transform: translate(0px, 0px);
 }
 @media screen and (max-width: 767px) {
   .button.arrow:after {
     width: 18px;
-    height: 16px;
+    background-size: 18px 12px;
   }
 }
 .button.arrow:hover:after {
@@ -831,7 +847,7 @@ h6 {
   right: 0px;
   bottom: 0px;
   background: url("../img/noise.gif");
-  background-size: 540px 540px;
+  background-size: 340px auto;
   opacity: 0.1;
 }
 
@@ -939,7 +955,7 @@ h6 {
   background: url("../img/schopBg.png") no-repeat left center;
   background-size: cover;
   position: absolute;
-  opacity: 0.1;
+  opacity: 0.2;
 }
 .schop-link.yamarket > span {
   color: red;
@@ -976,33 +992,31 @@ h6 {
     margin-top: 30px;
   }
 }
-.winnersTable thead {
-  font-size: 24px;
-  font-family: "Cartoon";
-  color: var(--color);
-  font-weight: normal;
-}
 .winnersTable thead tr {
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
 }
+.winnersTable thead tr th {
+  font-size: 24px;
+  font-family: "Cartoon";
+  color: var(--color);
+  font-weight: 400;
+}
 @media screen and (max-width: 1279px) {
-  .winnersTable thead {
-    font-size: 18px;
-  }
   .winnersTable thead tr {
     padding-bottom: 0px;
   }
 }
 @media screen and (max-width: 767px) {
-  .winnersTable thead {
-    font-size: 14px;
-    font-family: "PF-Din";
-    font-weight: 500;
-  }
-  .winnersTable thead th {
+  .winnersTable thead tr {
     padding: 0;
+  }
+  .winnersTable thead tr th {
+    font-size: 18px;
+    font-family: "PF-Din";
+    font-weight: 700;
+    text-transform: capitalize;
   }
 }
 .winnersTable tbody tr {
@@ -1292,6 +1306,7 @@ h6 {
 
 .section--hero {
   height: 100vh;
+  min-height: 678px;
 }
 @media screen and (max-width: 1279px) {
   .section--hero {
@@ -1434,29 +1449,36 @@ h6 {
   bottom: 0px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 10%, #000000 87.81%);
 }
+@media screen and (max-width: 767px) {
+  .section--hero .section-background:before {
+    background: url("../img/noise.gif") repeat left top;
+    background-size: 180px auto;
+    opacity: 0.18;
+  }
+}
 
 .hero-subtitle {
   text-align: center;
   background-color: var(--color);
   color: var(--black);
   font-family: Cartoon;
-  max-width: 226px;
-  padding: 24px 20px;
+  width: 226px;
+  padding: 16.32814px 26px;
   font-size: 24px;
   line-height: 1.07;
-  transform: translate(118%, -42%) rotate(-10deg);
-  text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
+  transform: translate(114%, -50%) rotate(-5deg);
 }
 @media screen and (max-width: 1380px) {
   .hero-subtitle {
-    max-width: 183px;
+    width: 183px;
     font-size: 18px;
+    line-height: 16.81px;
+    padding: 16.32814px 26px;
   }
 }
 @media screen and (max-width: 767px) {
   .hero-subtitle {
-    transform: translate(70%, -80%) rotate(-10deg);
-    padding: 20px 20px;
+    transform: translate(85%, -90%) rotate(-5deg);
   }
 }
 
@@ -1557,6 +1579,7 @@ h6 {
 @media screen and (max-width: 767px) {
   .steps li {
     width: 240px;
+    gap: 10px;
   }
 }
 .steps li .effect {
@@ -1569,12 +1592,15 @@ h6 {
   border-radius: 300px;
   overflow: hidden;
 }
-.steps li .effect img {
+.steps li .effect img,
+.steps li .effect video {
   position: absolute;
   left: 0px;
   top: 0px;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: 1;
 }
 .steps li .effect:before {
@@ -1595,16 +1621,29 @@ h6 {
   text-align: center;
   left: 0;
   top: 0;
-  transform: translate(-10%, -10%);
+  transform: translate(-5%, 0%);
   font-size: 200px;
   line-height: 200px;
   color: var(--color);
-  opacity: 0.2;
+  opacity: 0.1;
   z-index: 1;
 }
 @media screen and (max-width: 1279px) {
   .steps li:before {
     transform: translate(-5%, 0%);
+  }
+}
+@media screen and (max-width: 767px) {
+  .steps li:before {
+    transform: translate(-20%, 18%);
+  }
+}
+.steps li:nth-child(2n):before {
+  transform: translate(-10%, -20%);
+}
+@media screen and (max-width: 767px) {
+  .steps li:nth-child(2n):before {
+    transform: translate(-20%, 18%);
   }
 }
 .steps li > * {
@@ -1813,8 +1852,11 @@ h6 {
   color: var(--accent);
   font-size: 70px;
 }
+.promo-title .accent.accent--spacing {
+  letter-spacing: -2px;
+}
 .promo-title .accent .rub {
-  font-size: 65px;
+  font-size: 60px;
 }
 @media screen and (max-width: 1279px) {
   .promo-title .accent {
@@ -1829,7 +1871,7 @@ h6 {
     font-size: 30px;
   }
   .promo-title .accent .rub {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 
@@ -1908,8 +1950,22 @@ h6 {
   padding: 80px 0px;
 }
 .section--products .section-background .animation {
-  height: 100%;
+  max-height: 100%;
+  height: 800px;
   z-index: 1;
+  transform: translate(-170px, 10px);
+}
+@media screen and (max-width: 1279px) {
+  .section--products .section-background .animation {
+    height: 600px;
+    transform: translate(-48%, 120px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .section--products .section-background .animation {
+    height: 500px;
+    transform: translate(0%, 0%);
+  }
 }
 .section--products .section-background .products-bg-text {
   z-index: 3;
@@ -2032,6 +2088,12 @@ h6 {
 .section--shops .title {
   color: var(--color);
 }
+@media screen and (max-width: 767px) {
+  .section--shops .title {
+    max-width: 330px;
+    line-height: 38.4px;
+  }
+}
 .section--shops .subtitle {
   font-size: 64px;
   line-height: 1;
@@ -2043,7 +2105,11 @@ h6 {
 }
 @media screen and (max-width: 767px) {
   .section--shops .subtitle {
-    font-size: 20px;
+    font-size: 32px;
+    max-width: 330px;
+  }
+  .section--shops .subtitle span {
+    display: none;
   }
 }
 
@@ -2135,6 +2201,7 @@ h6 {
 }
 @media screen and (max-width: 767px) {
   .section--faq {
+    background: var(--black);
     padding: 80px 0px 0px 0px;
   }
   .section--faq .container {

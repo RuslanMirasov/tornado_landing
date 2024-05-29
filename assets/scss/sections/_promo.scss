@@ -157,8 +157,13 @@
   .accent {
     color: var(--accent);
     font-size: 70px;
+
+    &.accent--spacing {
+      letter-spacing: -2px;
+    }
+
     .rub {
-      font-size: 65px;
+      font-size: 60px;
     }
     @media screen and (max-width: 1279px) {
       font-size: 45px;
@@ -169,7 +174,7 @@
     @media screen and (max-width: 767px) {
       font-size: 30px;
       .rub {
-        font-size: 28px;
+        font-size: 26px;
       }
     }
   }

@@ -66,6 +66,9 @@ h6 {
   }
   &.title--h3 {
     font-size: 32.41px;
+    @media screen and (max-width: 767px) {
+      line-height: 30.27px;
+    }
   }
   &.title--h4 {
     font-size: 40px;
@@ -104,6 +107,6 @@ h6 {
 }
 
 .rub {
-  font-family: 'Arial';
+  font-family: 'San Francisco', 'Arial', 'PF-Din', sans-serif;
   font-weight: 700;
 }

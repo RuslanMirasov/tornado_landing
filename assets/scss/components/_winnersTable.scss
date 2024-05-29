@@ -10,27 +10,31 @@
     margin-top: 30px;
   }
   thead {
-    font-size: 24px;
-    font-family: 'Cartoon';
-    color: var(--color);
-    font-weight: normal;
     tr {
       display: flex;
       justify-content: space-between;
       padding-bottom: 20px;
+      th {
+        font-size: 24px;
+        font-family: 'Cartoon';
+        color: var(--color);
+        font-weight: 400;
+      }
     }
     @media screen and (max-width: 1279px) {
-      font-size: 18px;
       tr {
         padding-bottom: 0px;
       }
     }
     @media screen and (max-width: 767px) {
-      font-size: 14px;
-      font-family: 'PF-Din';
-      font-weight: 500;
-      th {
+      tr {
         padding: 0;
+        th {
+          font-size: 18px;
+          font-family: 'PF-Din';
+          font-weight: 700;
+          text-transform: capitalize;
+        }
       }
     }
   }

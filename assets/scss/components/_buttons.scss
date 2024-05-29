@@ -27,9 +27,10 @@
   line-height: 1;
   text-transform: uppercase;
   transition: 0.3s;
-  height: 53px;
+  height: 52px;
   z-index: 1;
   span {
+    display: flex;
     position: relative;
     z-index: 2;
   }
@@ -67,24 +68,30 @@
     }
     &.arrow {
       &:after {
-        content: url(../img/svg/arrow_white.svg);
+        background: url(../img/svg/arrow_white.svg) no-repeat center center;
       }
     }
   }
   // button with arrow
   &.arrow {
     padding-right: 24px;
-
+    span {
+      @media screen and (max-width: 767px) {
+        margin-bottom: -1%;
+      }
+    }
     &:after {
-      content: url(../img/svg/arrow.svg);
+      content: '';
+      background: url(../img/svg/arrow.svg) no-repeat center center;
+      background-size: 25px 13px;
       position: relative;
       transition: 0.3s;
       width: 25px;
-      height: 14px;
+      height: 100%;
       transform: translate(0px, 0px);
       @media screen and (max-width: 767px) {
         width: 18px;
-        height: 16px;
+        background-size: 18px 12px;
       }
     }
     &:hover {
