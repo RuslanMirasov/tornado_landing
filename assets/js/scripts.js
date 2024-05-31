@@ -78,3 +78,5 @@ function closeAllAccordeons(actualItem) {
     }
   });
 }
+
+console.log('Script End!');
