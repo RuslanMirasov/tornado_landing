@@ -396,6 +396,7 @@ h6 {
   gap: 28px;
   padding-left: 36px;
   max-width: 1440px;
+  height: 100%;
 }
 @media screen and (max-width: 1380px) {
   .header .section-container {
@@ -810,7 +811,7 @@ h6 {
   flex-wrap: wrap;
   position: relative;
   margin: 0 auto;
-  height: 100%;
+  height: auto;
   z-index: 1;
 }
 .section-container a {
@@ -1368,6 +1369,7 @@ h6 {
   align-items: center;
   padding: 0px 36px;
   max-width: 1440px;
+  height: 100%;
 }
 @media screen and (max-width: 1279px) {
   .section--hero .section-container {
