@@ -30,7 +30,7 @@
   }
   @media screen and (max-width: 1279px) {
     padding: 0px 0px 40px 0px;
-    .container {
+    .section-container {
       justify-content: flex-end;
     }
   }
@@ -73,6 +73,7 @@
     font-size: 18px;
     line-height: 1.2;
     max-width: 260px;
+    margin: 0;
     @media screen and (max-width: 767px) {
       font-size: 12px;
       max-width: 170px;

@@ -5,6 +5,7 @@
   width: 100%;
   max-width: 1060px;
   margin-top: 55px;
+  padding: 0;
   gap: 20px;
   li {
     width: calc((100% - 2 * 20px) / 3);
@@ -56,6 +57,7 @@
     > span {
       color: red;
     }
+    color: var(--black);
   }
   &.ozone {
     color: #0069ff;

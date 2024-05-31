@@ -2,6 +2,12 @@
   width: 100%;
   position: relative;
   background: var(--black);
+  p,
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+  }
   &.active {
     .accordeon__btn {
       svg {

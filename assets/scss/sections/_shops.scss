@@ -1,5 +1,8 @@
 .section--shops {
   padding: 50px 0px 120px 0px;
+  p {
+    margin: 0;
+  }
   @media screen and (max-width: 767px) {
     padding: 50px 0px 80px 0px;
   }

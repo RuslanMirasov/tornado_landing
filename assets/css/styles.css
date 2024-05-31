@@ -389,7 +389,7 @@ h6 {
   left: 0px;
   z-index: 10;
 }
-.header .container {
+.header .section-container {
   justify-content: space-between;
   align-content: center;
   align-items: center;
@@ -398,18 +398,18 @@ h6 {
   max-width: 1440px;
 }
 @media screen and (max-width: 1380px) {
-  .header .container {
+  .header .section-container {
     gap: 20px;
     padding-left: 20px;
   }
 }
 @media screen and (max-width: 1279px) {
-  .header .container {
+  .header .section-container {
     padding-left: 34px;
   }
 }
 @media screen and (max-width: 767px) {
-  .header .container {
+  .header .section-container {
     padding-left: 20px;
   }
 }
@@ -478,6 +478,7 @@ h6 {
   font-size: 18px;
   line-height: 1.7;
   transition: 0.3s;
+  color: var(--white);
 }
 .menu a:hover {
   color: var(--color);
@@ -493,6 +494,9 @@ h6 {
 
 .mobil-navigation {
   display: none;
+}
+.mobil-navigation a {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -571,6 +575,9 @@ h6 {
   font-size: 20px;
   line-height: 1;
 }
+.header-btn:hover {
+  color: var(--black);
+}
 @media screen and (max-width: 1380px) {
   .header-btn {
     width: 100px;
@@ -635,6 +642,9 @@ h6 {
   transition: 0.6s;
   z-index: 0;
 }
+.button:hover {
+  color: var(--black);
+}
 .button:hover:before {
   transform: translate(-20%, 50%) scale(1);
 }
@@ -643,6 +653,9 @@ h6 {
 }
 .button.button--yellow:before {
   background: var(--white);
+}
+.button.button--yellow:hover {
+  color: var(--black);
 }
 .button.button--black {
   background: var(--black);
@@ -718,7 +731,13 @@ h6 {
   padding: 50px 0px;
   z-index: 5;
 }
-.footer .container {
+.footer p,
+.footer ul,
+.footer ol {
+  margin: 0;
+  padding: 0;
+}
+.footer .section-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -730,7 +749,7 @@ h6 {
   max-width: 1440px;
 }
 @media screen and (max-width: 767px) {
-  .footer .container {
+  .footer .section-container {
     align-items: flex-start;
   }
 }
@@ -764,6 +783,9 @@ h6 {
   color: var(--color);
   border-bottom: 1px solid var(--color);
 }
+.footerNavigation a:hover {
+  color: var(--color);
+}
 @media screen and (max-width: 767px) {
   .footerNavigation {
     width: 55%;
@@ -782,7 +804,7 @@ h6 {
   overflow-y: auto;
 }
 
-.container {
+.section-container {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
@@ -791,20 +813,32 @@ h6 {
   height: 100%;
   z-index: 1;
 }
+.section-container a {
+  text-decoration: none;
+}
+.section-container h1,
+.section-container h2,
+.section-container h3,
+.section-container h4,
+.section-container h5,
+.section-container h6 {
+  margin: 0;
+  padding: 0;
+}
 @media screen and (max-width: 767px) {
-  .container {
+  .section-container {
     padding: 0px 20px;
     max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .container {
+  .section-container {
     padding: 0px 36px;
     max-width: 768px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .container {
+  .section-container {
     max-width: 1180px;
   }
 }
@@ -903,6 +937,7 @@ h6 {
   width: 100%;
   max-width: 1060px;
   margin-top: 55px;
+  padding: 0;
   gap: 20px;
 }
 .shops li {
@@ -956,6 +991,9 @@ h6 {
   background-size: cover;
   position: absolute;
   opacity: 0.2;
+}
+.schop-link.yamarket {
+  color: var(--black);
 }
 .schop-link.yamarket > span {
   color: red;
@@ -1088,6 +1126,7 @@ h6 {
   font-size: 20px;
   width: 30px;
   height: 30px;
+  color: var(--white);
 }
 .pagination-btn:hover, .pagination-btn.active, .pagination-btn.left, .pagination-btn.right {
   color: var(--color);
@@ -1097,6 +1136,12 @@ h6 {
   width: 100%;
   position: relative;
   background: var(--black);
+}
+.accordeon p,
+.accordeon ul,
+.accordeon ol {
+  margin: 0;
+  padding: 0;
 }
 .accordeon.active .accordeon__btn svg {
   fill: var(--white);
@@ -1318,21 +1363,21 @@ h6 {
     min-height: 667px;
   }
 }
-.section--hero .container {
+.section--hero .section-container {
   align-content: center;
   align-items: center;
   padding: 0px 36px;
   max-width: 1440px;
 }
 @media screen and (max-width: 1279px) {
-  .section--hero .container {
+  .section--hero .section-container {
     justify-content: center;
     align-content: space-between;
     padding: 120px 36px 40px 36px;
   }
 }
 @media screen and (max-width: 767px) {
-  .section--hero .container {
+  .section--hero .section-container {
     padding: 80px 20px 40px 20px;
   }
 }
@@ -1546,6 +1591,11 @@ h6 {
   max-width: 200px;
   z-index: 2;
 }
+.section--steps ul,
+.section--steps ol {
+  margin: 0;
+  padding: 0;
+}
 
 .steps {
   display: flex;
@@ -1685,6 +1735,9 @@ h6 {
   .section--promo {
     padding: 40px 0px 25px 0px;
   }
+}
+.section--promo p {
+  margin: 0;
 }
 
 .truck {
@@ -1982,7 +2035,7 @@ h6 {
   .section--products {
     padding: 0px 0px 40px 0px;
   }
-  .section--products .container {
+  .section--products .section-container {
     justify-content: flex-end;
   }
 }
@@ -2028,6 +2081,7 @@ h6 {
   font-size: 18px;
   line-height: 1.2;
   max-width: 260px;
+  margin: 0;
 }
 @media screen and (max-width: 767px) {
   .products .subtitle {
@@ -2079,6 +2133,9 @@ h6 {
 
 .section--shops {
   padding: 50px 0px 120px 0px;
+}
+.section--shops p {
+  margin: 0;
 }
 @media screen and (max-width: 767px) {
   .section--shops {
@@ -2132,7 +2189,7 @@ h6 {
     padding-right: 10px;
   }
 }
-.section--winners .container {
+.section--winners .section-container {
   max-width: 1000px;
 }
 .section--winners .section-background img.animation {
@@ -2204,7 +2261,7 @@ h6 {
     background: var(--black);
     padding: 80px 0px 0px 0px;
   }
-  .section--faq .container {
+  .section--faq .section-container {
     padding: 0;
   }
 }
