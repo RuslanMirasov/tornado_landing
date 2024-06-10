@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" preserveAspectRatio="none">
    <defs>
 
       <symbol id="close" viewBox="0 0 15 16">
@@ -6,8 +6,8 @@
          <path d="M13.9741 15.0944L15 14.0001L2.26965 0.421026L1.24374 1.51533L13.9741 15.0944Z" fill="white"/>
       </symbol>
 
-      <symbol id="promoBg" viewBox="0 0 857 383">
-         <path d="M553 78H270.477L235.5 33H80L0.5 109L89.5 360.247H270.477L263.753 383H580L588.5 360.247H776.5L828.5 288.5L856.5 38L666.5 0L553 78Z" fill="#FFEE02"/>
+      <symbol id="promoBg" viewBox="0 0 856 415" preserveAspectRatio="none">
+      <path d="M552.5 84.517H269.977L235 35.7572H79.5L0 118.107L89 390.346H269.977L263.253 415H579.5L588 390.346H776L828 312.604L856 41.1749L666 0L552.5 84.517Z" fill="#FFEE02"/>
       </symbol>
 
       <symbol id="arr-left" viewBox="0 0 9 16">
