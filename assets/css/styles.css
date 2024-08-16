@@ -407,15 +407,18 @@ h6 {
 @media screen and (max-width: 1279px) {
   .header .section-container {
     padding-left: 34px;
+    gap: 10px;
   }
 }
 @media screen and (max-width: 767px) {
   .header .section-container {
     padding-left: 20px;
+    gap: 20px;
   }
 }
 .header .button {
   height: 40px;
+  padding: 0px 20px;
 }
 @media screen and (max-width: 1380px) {
   .header .button {
@@ -426,7 +429,7 @@ h6 {
   .header .button {
     height: 32px;
     font-size: 14px;
-    padding: 0px 16px;
+    padding: 0px 10px;
   }
   .header .button.arrow {
     padding-right: 16px;
@@ -473,7 +476,6 @@ h6 {
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
-  gap: 24px;
 }
 .menu a {
   font-size: 18px;
@@ -484,10 +486,17 @@ h6 {
 .menu a:hover {
   color: var(--color);
 }
-@media screen and (max-width: 1279px) {
+@media (min-width: 1400px) {
+  .menu {
+    gap: 24px;
+  }
+}
+@media (max-width: 1399px) {
   .menu {
     gap: 16px;
   }
+}
+@media screen and (max-width: 1279px) {
   .menu a {
     font-size: 14px;
   }
