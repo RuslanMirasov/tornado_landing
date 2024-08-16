@@ -407,11 +407,13 @@ h6 {
 @media screen and (max-width: 1279px) {
   .header .section-container {
     padding-left: 34px;
+    gap: 10px;
   }
 }
 @media screen and (max-width: 767px) {
   .header .section-container {
     padding-left: 20px;
+    gap: 20px;
   }
 }
 .header .button {
@@ -419,7 +421,7 @@ h6 {
 }
 @media screen and (max-width: 1380px) {
   .header .button {
-    padding: 0px 20px;
+    padding: 0px 16px;
   }
 }
 @media screen and (max-width: 767px) {
